@@ -1,0 +1,66 @@
+/* 320++  */
+.b-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    background-color: @cl-black;
+    margin-bottom: 50px;
+
+    .no-touchevents &:hover,
+    .touchevents &:active {
+
+        .b-video__button-shape {
+            fill: @cl-pure-or-mostly-pure-red;
+            fill-opacity: 1;
+        }
+    }
+
+    &__media {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    &__button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 0;
+        width: 68px;
+        height: 48px;
+        border: none;
+        outline: none;
+        background-color: @cl-transparent;
+        transform: translate(-50%, -50%);
+        // background-color: transparent;
+    }
+
+    &__button-shape {
+        fill: @cl-very-dark-gray-mostly-black;
+        fill-opacity: 0.8;
+    }
+
+    &__button-icon {
+        fill: @cl-white;
+    }
+
+    &--enabled & {
+
+        &__button {
+            cursor: pointer;
+            display: block;
+        }
+    }
+
+    &__ourVideo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

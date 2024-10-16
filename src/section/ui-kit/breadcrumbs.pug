@@ -1,0 +1,25 @@
+//- ====================
+//- kontora: breadcrumbs
+//- 00-00-2020: author
+//- --------------------
+//- хлебные крошки
+//- ====================
+
+mixin breadcrumbs(last, ...items)
+    <!-- START хлебные крошки -->
+    +b('nav').breadcrumbs(class!=attributes.class, aria-label="Breadcrumb")
+        +e('ul').list
+            each item, index in items
+                +e('li').item
+                    +e('a').link(href="javascript:void(0);" title=item, aria-current="page") #{item}
+            //- последняя всегда не ссылка
+            if last
+                +e('li').item.--last
+                    +e.link(aria-current="page") #{last}
+            block
+
+            //- if ((index + 1) < items.length)
+            //-     +e('a').link(href="javascript:void(0);" title=item) #{item}
+            //- else
+            //-     +e('span').link #{item}
+    <!-- STOP хлебные крошки -->

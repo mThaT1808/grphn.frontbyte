@@ -1,0 +1,220 @@
+//- ====================
+//- kontora: Gui
+//- 00-00-2017:
+//- --------------------
+//- Gui
+//- ====================
+
+//- Используем стандартный шаблон Project
+extends ./template/base_layout
+
+block variables
+    - var file_name = 'gui'
+
+//- Модифицируем head
+block head
+    - var pageTitle = 'gui';
+
+//- Выводим попапы
+block popup
+    //- ПопАпчики
+    include section/ui-kit/popup.pug
+    +popup()(data-popup='test')
+        div(style='background-color: white; height: 999px; width: 400px;') Тестовый текст
+            br
+            +popup_close()
+
+    include section/ui-kit/popup.pug
+    +popup()(data-popup='test2')
+        div(style='background-color: white; height: 229px; width: 150px;') Тестовый текст 2
+            br
+            +popup_close()
+
+//- Выводим content
+block content
+    .b-container
+        h1 Gui
+
+        include section/ui-kit/text-block.pug
+        +text-block()
+            p
+                a.link.js-open-popup( href='#', data-popup='test' ) Открыть попАп - 1
+            p
+                a.link.js-open-popup( href='#', data-popup='test2' ) Открыть попАп - 2
+
+        include section/ui-kit/hr.pug
+        +hr()
+        //- Текстовые ссылки
+        include section/ui-kit/link.pug
+        +link({
+            content: 'text',
+            link: true,
+            href: '#',
+        }).--test(data-url="atribute")
+        include section/ui-kit/link.pug
+        +link({
+            content: 'text',
+            link: false,
+            href: '#',
+        }).js-class.-active(data-popup="open-test")
+
+        include section/ui-kit/hr.pug
+        +hr().--none
+        //- Кнопки похожие на кнопки
+        include section/ui-kit/button.pug
+        +button({
+            content: 'text',
+            link: true,
+            href: '#',
+        }).--test(data-url="atribute")
+        include section/ui-kit/button.pug
+        +button({
+            content: 'text',
+            link: false,
+            href: '#',
+        }).js-class.-active(data-popup="open-test")
+
+        include section/ui-kit/hr.pug
+        +hr()
+        include section/ui-kit/text-block.pug
+        +text-block()
+            p Параграф
+
+        include section/ui-kit/hr.pug
+        +hr()
+        //- Подключаем иконочки icon-{НАЗВАНИЕ SVG ФАЙЛА}
+        include section/ui-kit/icon.pug
+        +icon('sort').--test
+        include section/ui-kit/icon.pug
+        +icon('sort')
+
+        include section/ui-kit/hr.pug
+        +hr()
+        //- Табы с анимацией
+        include section/ui-kit/tab.pug
+        +tab()
+            div(aria-live="polite" role="region")
+                +e('article').content.js-tab-content.-active(id="content1", role="tabpanel")
+                    //- контент таба
+                    p Test tab
+                +e('article').content.js-tab-content(id="content2", role="tabpanel")
+                    //- контент таба
+                    p Test tab 2
+                +e('article').content.js-tab-content(id="content3", role="tabpanel")
+                    //- контент таба
+                +e('article').content.js-tab-content(id="content4", role="tabpanel")
+                    //- контент таба
+                +e('article').content.js-tab-content(id="content5", role="tabpanel")
+                    //- контент таба
+
+
+        include section/ui-kit/hr.pug
+        +hr()
+        //- Инпут: +input(id, type, placeholder, name, value)
+        include section/ui-kit/input.pug
+        +input({
+            id: 'id-test',
+            type: 'password',
+            placeholder: 'write inside me',
+            name: 'name-test',
+            value: 'value-test',
+        }).-active(data-input="input-test")
+        include section/ui-kit/input.pug
+        +input({
+            id: 'id-test2',
+            type: 'text',
+            placeholder: '',
+            name: 'name-test',
+            value: 'value-test',
+        }).--test
+
+        include section/ui-kit/hr.pug
+        +hr()
+        //- Хлебные крошки
+        include section/ui-kit/breadcrumbs.pug
+        +breadcrumbs('последняя', ['Главная', 'неГлавная', 'другая'], 'средняя')
+
+        include section/ui-kit/hr.pug
+        +hr()
+        //- Чекбокс: +checkbox(name, id, title)
+        include section/ui-kit/checkbox.pug
+        +checkbox({
+            name: 'box-test',
+            id: 'box-test-1',
+            title: 'Значение 1',
+            js: 'js-class',
+        })
+        include section/ui-kit/checkbox.pug
+        +checkbox({
+            name: 'box-test',
+            id: 'box-test-2',
+            title: 'Значение 2',
+            js: '',
+        }).--class
+
+        include section/ui-kit/hr.pug
+        +hr()
+        //- Радио: +radio(textLabel, name, id, checked, js)
+        include section/ui-kit/radio.pug
+        +radio({
+            textLabel: 'textLabel-1',
+            name: 'radio-test',
+            id: 'id-test-3',
+            js: '',
+            checked: 'checked',
+            radio: false,
+        })
+        include section/ui-kit/radio.pug
+        +radio({
+            textLabel: 'textLabel-2',
+            name: 'radio-test',
+            id: 'id-test-4',
+            js: '',
+            checked: 'checked',
+            radio: true,
+        })
+
+        include section/ui-kit/hr.pug
+        +hr()
+        //- Заголовок
+        include section/ui-kit/title.pug
+        +title({
+            type: 'h1',
+            title: 'Отзывы',
+        }).--mod
+        include section/ui-kit/title.pug
+        +title({
+            type: 'h2',
+            title: 'title',
+        })
+
+        include section/ui-kit/images.pug
+        +images([
+            {
+            'srcset' : '/images/content/test-image.webp',
+            'media' : '',
+            'type' : 'image/webp'
+            },
+        ], true, "/images/content/test-image.jpg")
+
+        +images({
+            src : "/images/content/test-image.jpg"
+        })
+
+        include section/ui-kit/video.pug
+        +video({
+            href : 'https://www.youtube.com/watch?v=TgHcTailbao&t=1s',
+            src : 'https://i.ytimg.com/vi/TgHcTailbao/maxresdefault.jpg',
+            srcset : 'https://i.ytimg.com/vi_webp/TgHcTailbao/maxresdefault.webp',
+            d : 'M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z',
+            path : 'M 45,24 27,14 27,34',
+            label : 'Запустить видео',
+        }, true)(title='', alt='')
+
+        +video({
+            poster : '/images/content/test.jpg',
+            address : 'images/content/test.mp4',
+            ourVideo : true
+        })(controls, preload="metadata", muted)
+
+        div(style='height: 200px;')

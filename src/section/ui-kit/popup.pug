@@ -1,0 +1,31 @@
+//- ====================
+//- kontora: popup
+//- 00-00-2020: author
+//- --------------------
+//- Попап
+//- ====================
+
+mixin popup()
+    //- +b('dialog').popup //пока не поддерживается
+    +b.popup&attributes( attributes )(role="dialog", aria-modal="true")
+        +e.content
+            //- ПопАпчики
+            block
+
+//- для использования дат
+mixin popup-data(data)
+    +b.popup&attributes( data.attributes )(role="dialog", aria-modal="true")
+        +e.content( class=data.contentClass )
+            //- ПопАпчики
+            block
+
+//- Крестик
+mixin popup_close()
+    +b('button').popup__close(class!=attributes.class ).js-close-popup
+        include icon.pug
+        //- замениь на нужную иконку!!
+        +icon('sort')(aria-hidden="true").--close-popup
+        .visually-hidden Закрыть окно
+
+
+//- если в попапе есть заголовок, то нужно так делать, добавить в заголовок ID и в обертку попапа рядом с aria-modal прописать aria-labelledby со значением как у ID

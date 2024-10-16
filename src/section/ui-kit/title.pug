@@ -1,0 +1,10 @@
+//- ====================
+//- kontora: title
+//- 00-00-2020: author
+//- --------------------
+//- заголовок
+//- ====================
+
+mixin title(obj)
+    +b(obj.type).title(class!=attributes.class) #{obj.title}
+        block

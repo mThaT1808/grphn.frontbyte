@@ -1,0 +1,14 @@
+//- ====================
+//- kontora: checkbox
+//- 00-00-2020: author
+//- --------------------
+//- checkbox
+//- ====================
+
+mixin checkbox(obj)
+    +b.checkbox( class!=attributes.class )
+        +e('input').input(type="checkbox", name=obj.name, id=obj.id, class=(obj.js ? obj.js : ''))
+        +e('label').name(for=obj.id, class!=attributes.class)
+            if obj.title
+                +e('span').text #{obj.title}
+            block

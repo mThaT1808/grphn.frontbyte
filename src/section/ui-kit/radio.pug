@@ -1,0 +1,14 @@
+//- ====================
+//- kontora: radio
+//- 00-00-2020: author
+//- --------------------
+//- Радио-баттон
+//- ====================
+
+mixin radio(obj)
+    +b.radio(class!=attributes.class)
+        +e('input')(type="radio", name=obj.name, id=obj.id, checked=checked || false).input
+        +e('label').label(for=obj.id, class!=attributes.class, class=(obj.js ? obj.js : ''))
+            if obj.textLabel
+                +e('span').text-label(class!=attributes.class) #{obj.textLabel}
+        block

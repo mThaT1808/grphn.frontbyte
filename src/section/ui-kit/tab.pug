@@ -1,0 +1,22 @@
+//- ====================
+//- kontora: tab
+//- 00-00-2020: author
+//- --------------------
+//- Табы
+//- ====================
+
+mixin tab()
+    <!- START табы ->
+    +b('section').tab.js-tab(role="tablist")
+        +e('nav').tab-nav
+            +e('a').link.js-tab-link(href="javascript:void(0);" title="Информация" data-tab="content1", aria-controls="content1", role="tab") Название первого таба
+            +e('a').link.js-tab-link(href="javascript:void(0);" title="Услуги" data-tab="content2", role="tab", aria-controls="content2") Второго
+            +e('a').link.js-tab-link(href="javascript:void(0);" title="Документы" data-tab="content3", role="tab", aria-controls="content3")
+                | Три
+                +e('span').number 7
+            +e('a').link.js-tab-link(href="javascript:void(0);" title="История начислений" data-tab="content4", role="tab", aria-controls="content4") Четвёртый
+            +e('a').link.js-tab-link(href="javascript:void(0);" title="История платежей" data-tab="content5", role="tab", aria-controls="content5") Пятый
+        //- +e('div').line-block
+        //-     +e('div').line-nav.js-line-nav
+        block
+    <!- STOP табы ->

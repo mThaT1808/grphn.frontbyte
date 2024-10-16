@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "Логин/Пароль"
+AuthUserFile /home/test/test.kontora-test.ru/www/.htpasswd
+Require valid-user
+<Files .htpasswd>
+   deny from all
+</Files>

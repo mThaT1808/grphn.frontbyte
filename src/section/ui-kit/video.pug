@@ -1,0 +1,15 @@
+mixin video(obj, youtube)
+    if youtube
+        +b.video.js-video(class!=attributes.class)
+            +e('a').link.js-video__link(href=obj.href)
+                +e('picture')
+                    +e('source')(srcset=obj.srcset, type='image/webp')
+                    +e('img').media&attributes( attributes )(src=obj.src, loading="lazy").js-video__media
+            +e('button').button.js-video__button(aria-label=obj.label)
+                +e('svg')(width='68', height='48', viewBox='0 0 68 48')
+                    +e('path').button-shape(d=obj.d)
+                    +e('path').button-icon(d=obj.path)
+    else
+        +b.video(class!=attributes.class)
+            +e('video').ourVideo&attributes( attributes )(loading="lazy")
+                +e('source')(src=obj.address, type="video/mp4")

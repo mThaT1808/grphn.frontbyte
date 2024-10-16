@@ -1,0 +1,6 @@
+pages:
+  stage: deploy
+  script:
+  - 'nvm use 16.0.0 && cd /home/genbank/genbank-front.grphn-dev.ru/www && git reset --hard && git pull origin && npm i --prefer-offline --no-audit --progress=false && cd src/js && npm i --prefer-offline --no-audit --progress=false && cd ../.. && gulp build'
+  only:
+    - main

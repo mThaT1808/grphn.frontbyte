@@ -19,8 +19,23 @@ block head
 
 //- Выводим попапы
 block popup
+    //- ПопАпчики
+    include section/ui-kit/popup.pug
+    +popup()(data-popup='test')
+        div(style='background-color: white; height: 999px; width: 400px;') Тестовый текст
+            br
+            +popup_close()
 
 //- Выводим content
 block content
 
     | Главная страница MAIN Page @$#%^!$^#)12345678
+
+    include section/ui-kit/text-block.pug
+    +text-block()
+        p
+            a.link.js-open-popup( href='#', data-popup='test' ) Открыть попАп - 1
+        p
+            a.link.js-open-popup( href='#', data-popup='test2' ) Открыть попАп - 2
+    include template/layout/header.pug
+    +header()

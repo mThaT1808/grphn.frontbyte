@@ -29,13 +29,181 @@ block popup
 //- Выводим content
 block content
 
-    | Главная страница MAIN Page @$#%^!$^#)12345678
-
-    include section/ui-kit/text-block.pug
-    +text-block()
-        p
-            a.link.js-open-popup( href='#', data-popup='test' ) Открыть попАп - 1
-        p
-            a.link.js-open-popup( href='#', data-popup='test2' ) Открыть попАп - 2
-    include template/layout/header.pug
-    +header()
+    +b('section').hero
+        include section/ui-kit/title.pug
+        +e('b').__heading
+            | We provide digital services and develop our own products in sports and iHealth industry
+        include section/ui-kit/text-block.pug
+        +e().__content
+            | We put technology and sport together to create the world's most efficient and popular sports apps.
+        +b('div').link-more
+            | Drop us a line
+            a(href="javascript:void(0)").link-more__link
+                | ->
+    +b('section').about#about
+        +e('b').__heading
+            | We combine high level of professionalism and individual approach
+        +e('p').__text
+            | We have subject domain expertise in various aspects
+        +e('ul').__list
+            +e('li').__item
+                +e('div').__logo-wrapper
+                    +e('img').image(src="images/logo/digital.svg", alt="", width=30, height=30).__logo
+                +e('p').__description
+                    | Project management for simple and complex projects
+            +e('li').__item
+                +e('div').__logo-wrapper
+                    +e('img').image(src="images/logo/hire.svg", alt="" width="30" height="30").__logo
+                +e('p').__description
+                    | Management for hire
+            +e('li').__item
+                +e('div').__logo-wrapper
+                    +e('img').image(src="images/logo/project.svg", alt="" width="30" height="30").__logo
+                +e('p').__description
+                    | Digital transformation
+    +b('section').service#service
+        +b('h2').title
+            | What We Do
+        +e('ul').__list
+            +e('li').__item.__item--line
+                | Development and support of new and existing software systems
+            +e('li').__item.__item--line
+                | Deep analytics in various spheres
+            +e('li').__item.__item--line
+                | Insights-driven solutions
+            +e('li').__item.__item--line
+                | Agile product engineering
+            +e('li').__item.__item--line
+                | Quality Assurance for new and existing products
+            +e('li').__item.__item--line
+                | Data collection, research and analysis
+            +e('li').__item.__item--line
+                | UX/UI concepts and design
+            +e('li').__item.__item--line
+                | Video and motion design
+        +b('div').link-more.link-more--colored
+            | Services
+            +e('a').link(href="javascript:void(0)" title="Services").__link
+                | ->
+    +b('section').project#project
+        +b('h2').title
+            | Our Work
+        +e('p').__text
+            | We change the way businesses and industries operate.
+        +b('div').post
+            +e('img').image(src="images/content/main/320/birdieeyes.jpg", alt="" width="320" height="300")
+            +b('h3')
+                | birdieeyes
+            +e('p')
+                | We have introduced AR technology into one of the most traditional games and made it even more interesting
+        +b('div').post
+            +e('img').image(src="images/content/main/320/upsport.jpg", alt="" width="320" height="300")
+            +b('h3')
+                | upsport
+            +e('p')
+                | Live communication platform that has changed the game for sport clubs, parents and their kids
+        +b('div').post
+            +e('img').image(src="images/content/main/320/xland.jpg", alt="" width="320" height="300")
+            +b('h3')
+                | xland
+            +e('p')
+                | Digital presence for the first indoor activity park in Norway
+        +b('div').link-more.link-more--colored
+            | All Projects
+            +e('a').link(href="javascript:void(0)").__link
+                | ->
+    +b('section').team#team
+        +b('div').post
+            +e('img').image(src="images/content/main/320/team-home.jpg", alt="" width="320" height="300")
+            +e('h3')
+                | our team
+            +e('p')
+                | We are united by our passion to create unique and efficient digital products
+        +b('h2').title
+            | Inside Frontbyte
+        +e('p').__text
+            | We change the way businesses and industries operate.
+        +b('div').post
+            +e('img').image(src="images/content/main/320/inside-press.jpg", alt="" width="320" height="300")
+            +e('h3')
+                | Press about us
+            +e('p')
+                | AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation
+        +e('div').__slider
+            | nelf-c.lf TC
+        +b('section').news
+            +e('h3').__title
+                | Latest News
+            +e('div')
+                +e('p')
+                    | How to use email marketing to connect with your users
+                +e('time')
+                    | Dec 19, 2018
+            +e('div')
+                +e('p')
+                    | How to use email marketing to connect with your users
+                +e('time')
+                    | Dec 19, 2018
+            +e('div')
+                +e('p')
+                    | How to use email marketing to connect with your users
+                +e('time')
+                    | Dec 19, 2018
+    +b('section').contacts#contacts
+        +b('h2').title.title--light
+            | Contacts
+        +e('p').__text
+            | Our head office is located in Norway. Research and dev center is located in Belarus.
+        +b('div').social
+            +e('ul').__list
+                +e('li').__item
+                    +e('img').image(src="images/logo/mobile/linkedin-white.svg", alt="", width="30" height="30")
+                +e('li').__item
+                    +e('img').image(src="images/logo/mobile/facebook-white.svg", alt="", width="30" height="30")
+                +e('li').__item
+                    +e('img').image(src="images/logo/mobile/instagram-white.svg", alt="", width="30" height="30")
+        +b('div').office
+            +e('b').__country
+                | Norway
+            +e('div').__info
+                +e('p').__city
+                    | Kristiansand
+                +e('p').__addres
+                    | Vestre strandgate, 23, 4th and 6th floor N-4611
+                +e('a').link(href="mailto:contact@frontbyte.no" title="contact@frontbyte.no", ).__email
+                    | contact@frontbyte.no
+                +e('p').__phone
+                    | +47 416 36 983
+        +b('div').office
+            +e('b').__country
+                | Belarus
+            +e('div').__info
+                +e('p').__city
+                    | Minsk
+                +e('p').__addres
+                    | Dombrovskaya str., 9, оffice 10.2.2
+                +e('a').link(href="mailto:contact@frontbyte.no" title="contact@frontbyte.no", ).__email
+                    | contact@frontbyte.by
+                +e('p').__phone
+                    | +375 29 1393336
+        +b('div').link-more
+            | Drop us a line
+            +e('a').link(href="javascript:void(0)").__link
+                | ->
+    +b('section').page-navigation
+        +e('ul').__list
+            +e.__item
+                +e('a').link(href="#about").__link
+                    | About
+            +e.__item
+                +e('a').link(href="#project").__link
+                    | Projects
+            +e.__item
+                +e('a').link(href="#service").__link
+                    | Services
+            +e.__item
+                +e('a').link(href="#team").__link
+                    | Our team
+            +e.__item
+                +e('a').link(href="#contacts").__link
+                    | Contacts

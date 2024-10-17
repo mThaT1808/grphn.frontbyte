@@ -6,4 +6,7 @@
 //- ====================
 mixin header()
     +b('header').header
-        | ГОЛОВНАЯ ГОЛОВА
+        +b('picture').header__logo-wrapper
+            img(src="../../images/logo/mobile/logo-mobile-light.svg", alt="")
+        +b('button').burger
+            | ///

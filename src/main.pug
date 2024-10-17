@@ -29,7 +29,64 @@ block popup
 //- Выводим content
 block content
 
-    | Главная страница MAIN Page @$#%^!$^#)12345678
+    +b('section').hero
+        include section/ui-kit/title.pug
+        +b('b').hero__heading
+            | We provide digital services and develop our own products in sports and iHealth industry
+        include section/ui-kit/text-block.pug
+        +text-block().hero__content
+            | We put technology and sport together to create the world's most efficient and popular sports apps.
+        +b('div').link-more
+            | Drop us a line
+            a(href="javascript:void(0)").link-more__link
+                | ->
+    +b('section').we-do
+        +b('b').we-do__heading
+            | We combine high level of professionalism and individual approach
+        include section/ui-kit/text-block.pug
+        +b('p').we-do__text
+            | We have subject domain expertise in various aspects
+        +b('ul').we-do__list
+            +b('li').we-do__item
+                +b('div').we-do__logo-wrapper
+                    img(src="images/logo/mobile/ic-digital.svg" alt="" width="30" height="30").we-do__logo
+                +b('p').we-do__description
+                    | Project management for simple and complex projects
+            +b('li').we-do__item
+                +b('div').we-do__logo-wrapper
+                    img(src="images/logo/mobile/ic-hire.svg", alt="" width="30" height="30").we-do__logo
+                +b('p').we-do__description
+                    | Management for hire
+            +b('li').we-do__item
+                +b('div').we-do__logo-wrapper
+                    img(src="images/logo/mobile/ic-project.svg", alt="" width="30" height="30").we-do__logo
+                +b('p').we-do__description
+                    | Digital transformation
+        +b('h2').title
+            |
+        +b('ul').we-do__list
+            +b('li').we-do__item.we-do__item--line
+                | Development and support of new and existing software systems
+            +b('li').we-do__item.we-do__item--line
+                | Deep analytics in various spheres
+            +b('li').we-do__item.we-do__item--line
+                | Insights-driven solutions
+            +b('li').we-do__item.we-do__item--line
+                | Agile product engineering
+            +b('li').we-do__item.we-do__item--line
+                | Quality Assurance for new and existing products
+            +b('li').we-do__item.we-do__item--line
+                | Data collection, research and analysis
+            +b('li').we-do__item.we-do__item--line
+                | UX/UI concepts and design
+            +b('li').we-do__item.we-do__item--line
+                | Video and motion design
+    +b('div').link-more.link-more--solo
+        | Services
+        a(href="javascript:void(0)").link-more__link
+            | ->
+
+
 
     include section/ui-kit/text-block.pug
     +text-block()
@@ -37,5 +94,4 @@ block content
             a.link.js-open-popup( href='#', data-popup='test' ) Открыть попАп - 1
         p
             a.link.js-open-popup( href='#', data-popup='test2' ) Открыть попАп - 2
-    include template/layout/header.pug
-    +header()
+

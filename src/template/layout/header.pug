@@ -6,7 +6,34 @@
 //- ====================
 mixin header()
     +b('header').header
-        +b('picture').header__logo-wrapper
-            img(src="../../images/logo/mobile/logo-mobile-light.svg", alt="")
-        +b('button').burger
-            | ///
+        .b-container
+            +e.__wrapper
+                +e('img').image(src="../../images/logo/mobile/logo-mobile-light.svg", alt="").__logo
+                +b('button').burger
+                +e.__functional
+                    +e('img').image(src="../../images/logo/mobile/logo-mobile-dark.svg", alt="").__logo
+                    +b('button').burger.--close
+                    +b('nav').nav
+                        +e('ul').__list
+                            +e.__item
+                                +e('a').link(href="javascript:void(0);" title="").__link
+                                    | About
+                            +e.__item
+                                +e('a').link(href="javascript:void(0);" title="").__link
+                                    | Projects
+                            +e.__item
+                                +e('a').link(href="javascript:void(0);" title="").__link
+                                    | Services
+                            +e.__item
+                                +e('a').link(href="javascript:void(0);" title="").__link
+                                    | Our team
+                            +e.__item
+                                +e('a').link(href="javascript:void(0);" title="").__link
+                                    | Contacts
+                    +b.language
+                        +e('button').__button
+                            | No
+                        +e('button').__button
+                            | En
+                        +e('button').__button
+                            | Ru

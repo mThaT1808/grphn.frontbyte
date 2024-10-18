@@ -1,5 +1,6 @@
 /* 320 + */
-.b-link {
+.b-link{
+    position: relative;
     display: inline;
     text-decoration: none;
     transition: color @animation-time;
@@ -10,5 +11,46 @@
     // Общие
     &--block {
         display: block;
+    }
+    &--hero {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: @cl-light-grayish-blue;
+        padding: 30px 0;
+    }
+    &--hero:active {
+        opacity: 0.5;
+    }
+    &__arrow {
+        position: absolute;
+        right: 0;
+        top: calc(50% - 1px);
+        width: 20px;
+        height: 1px;
+        background-color: @cl-light-grayish-blue;
+    }
+    &__arrow::before,
+    &__arrow::after {
+        content: '';
+        width: 25%;
+        height: 1px;
+        background-color: @cl-light-grayish-blue;
+        transform-origin: right;
+        position: absolute;
+        right: 0;
+    }
+
+    &__arrow::after {
+        transform: rotate(45deg);
+    }
+
+    &__arrow::before {
+        transform: rotate(-45deg);
+    }
+
+    &--hero:active &__arrow {
+        transform: scale(0.9);
     }
 }

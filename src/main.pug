@@ -30,16 +30,14 @@ block popup
 block content
 
     +b('section').hero
-        include section/ui-kit/title.pug
-        +e('b').__heading
-            | We provide digital services and develop our own products in sports and iHealth industry
-        include section/ui-kit/text-block.pug
-        +e().__content
-            | We put technology and sport together to create the world's most efficient and popular sports apps.
-        +b('div').link-more
-            | Drop us a line
-            a(href="javascript:void(0)").link-more__link
-                | ->
+        .b-container
+            +e('p').__heading
+                | We provide digital services and develop our own products in sports and iHealth industry
+            +e().__content
+                | We put technology and sport together to create the world's most efficient and popular sports apps.
+            +b('a').link(href="javascript:void(0)" title="drop us a line").--block.--hero
+                | Drop us a line
+                +e('div').__arrow
     +b('section').about#about
         +e('b').__heading
             | We combine high level of professionalism and individual approach

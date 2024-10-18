@@ -8,10 +8,12 @@ mixin header()
     +b('header').header
         .b-container
             +e.__wrapper
-                +e('img').image(src="../../images/logo/mobile/logo-mobile-light.svg", alt="").__logo
+                +e('a').link(href="#" title="home").__home
+                    +e('img').image(src="../../images/logo/mobile/logo-mobile-light.svg", alt="").__logo
                 +b('button').burger
                 +e.__functional
-                    +e('img').image(src="../../images/logo/mobile/logo-mobile-dark.svg", alt="").__logo
+                    +e('a').link(href="#" title="home").__home
+                        +e('img').image(src="../../images/logo/mobile/logo-mobile-dark.svg", alt="").__logo
                     +b('button').burger.--close
                     +b('nav').nav
                         +e('ul').__list
@@ -33,7 +35,7 @@ mixin header()
                     +b.language
                         +e('button').__button
                             | No
-                        +e('button').__button
+                        +e('button').__button.__button--active
                             | En
                         +e('button').__button
                             | Ru

@@ -1,0 +1,27 @@
+/* 320++  */
+.b-service {
+    padding-top: 30px;
+
+    &__list {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        padding-left: 40px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__item {
+        list-style: none;
+        position: relative;
+    }
+    &__item::before {
+        content: '';
+        width: 20px;
+        height: 1px;
+        background-color: @dark-sky-blue;
+        position: absolute;
+        left: -40px;
+        top: 9px;
+    }
+}

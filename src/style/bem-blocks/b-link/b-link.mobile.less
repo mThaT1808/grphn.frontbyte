@@ -50,7 +50,21 @@
         transform: rotate(-45deg);
     }
 
-    &--hero:active &__arrow {
+    &:active &__arrow {
         transform: scale(0.9);
+    }
+
+    &--colored {
+        color: @cl-light-grayish-blue;
+
+        background-color: @dark-sky-blue;
+        padding: 20px 30px;
+
+        &:active {
+            background-color: @dark;
+        }
+    }
+    &--colored &__arrow {
+        margin-right: 30px;
     }
 }

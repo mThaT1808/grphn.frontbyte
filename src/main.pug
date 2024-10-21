@@ -210,19 +210,6 @@ block content
             | Drou us a line
             +e('div').__arrow
     +b('section').page-navigation
-        +e('ul').__list
-            +e.__item
-                +e('a').link(href="#about").__link
-                    | About
-            +e.__item
-                +e('a').link(href="#project").__link
-                    | Projects
-            +e.__item
-                +e('a').link(href="#service").__link
-                    | Services
-            +e.__item
-                +e('a').link(href="#team").__link
-                    | Our team
-            +e.__item
-                +e('a').link(href="#contacts").__link
-                    | Contacts
+        .b-container
+            include template/layout/nav.pug
+            +nav()

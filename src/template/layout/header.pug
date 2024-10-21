@@ -15,23 +15,8 @@ mixin header()
                     +e('a').link(href="#" title="home").__home
                         +e('img').image(src="../../images/logo/mobile/logo-mobile-dark.svg", alt="").__logo
                     +b('button').burger.--close
-                    +b('nav').nav
-                        +e('ul').__list
-                            +e.__item
-                                +e('a').link(href="javascript:void(0);" title="").__link
-                                    | About
-                            +e.__item
-                                +e('a').link(href="javascript:void(0);" title="").__link
-                                    | Projects
-                            +e.__item
-                                +e('a').link(href="javascript:void(0);" title="").__link
-                                    | Services
-                            +e.__item
-                                +e('a').link(href="javascript:void(0);" title="").__link
-                                    | Our team
-                            +e.__item
-                                +e('a').link(href="javascript:void(0);" title="").__link
-                                    | Contacts
+                    include nav.pug
+                    +nav()
                     +b.language
                         +e('button').__button
                             | No

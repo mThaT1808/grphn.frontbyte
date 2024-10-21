@@ -1,0 +1,37 @@
+/* 320++  */
+.b-map {
+    height: 220px;
+    position: relative;
+
+    &__image {
+        display: block;
+        position: absolute;
+
+        height: 330px;
+        min-width: 700px;
+
+        left: 50%;
+        transform: translateX(-50%) translateX(-37px) translateY(29px);
+        z-index: -1;
+    }
+    &__office {
+        position: absolute;
+        width: 38px;
+        height: 38px;
+        border-radius: 100%;
+        background-color: @dark-sky-blue;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-62px, -24px);
+
+        &--belarus {
+            width: 30px;
+            height: 30px;
+            background-color: @darkish-pink;
+
+            transform: translate(1px, -5px);
+        }
+    }
+}

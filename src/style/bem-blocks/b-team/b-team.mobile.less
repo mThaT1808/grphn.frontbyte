@@ -1,0 +1,22 @@
+/* 320++  */
+.b-team {
+
+    &__text {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .b-title {
+        position: relative;
+        margin-top: 30px;
+    }
+    .b-title::before {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        height: 1px;
+        background-color: @silver;
+        top: -30px;
+        left: -30px;
+    }
+}

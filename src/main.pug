@@ -75,39 +75,51 @@ block content
                     | UX/UI concepts and design
                 +e('li').__item.__item--line
                     | Video and motion design
-        +b('a').link(href="javascript:void(0)" title="drop us a line").--block.--colored
+        +b('a').link(href="javascript:void(0)" title="Services").--block.--colored
             | Services
             +e('div').__arrow
     +b('section').project#project
-        +b('h2').title
-            | Our Work
-        +e('p').__text
-            | We change the way businesses and industries operate.
-        +b('div').post
-            +e('img').image(src="images/content/main/320/birdieeyes.jpg", alt="" width="320" height="300")
-            +b('h3')
-                | birdieeyes
-            +e('p')
-                | We have introduced AR technology into one of the most traditional games and made it even more interesting
-        +b('div').post
-            +e('img').image(src="images/content/main/320/upsport.jpg", alt="" width="320" height="300")
-            +b('h3')
-                | upsport
-            +e('p')
-                | Live communication platform that has changed the game for sport clubs, parents and their kids
-        +b('div').post
-            +e('img').image(src="images/content/main/320/xland.jpg", alt="" width="320" height="300")
-            +b('h3')
-                | xland
-            +e('p')
-                | Digital presence for the first indoor activity park in Norway
-        +b('div').link-more.link-more--colored
+        .b-container
+            +b('h2').title
+                | Our Work
+            +e('p').__text
+                | We change the way businesses and industries operate.
+            +b('div').post
+                +e('picture').picture
+                    +e('img').image(src="images/content/main/320/birdieeyes.jpg", alt="" width="320" height="300")
+                    +e('source').image(src="mages/content/main/980/birdieeyes@x2.jpg", media="(min-width: 980px)" width="320" height="300")
+                    +e('source').image(src="mages/content/main/1440/birdieeyes@x3.jpg", media="(min-width: 1440px)" width="320" height="300")
+                +b('h3')
+                    | birdieeyes
+                +e('p')
+                    | We have introduced AR technology into one of the most traditional games and made it even more interesting
+            +b('div').post
+                +e('picture').picture
+                    +e('img').image(src="images/content/main/320/upsport.jpg", alt="" width="320" height="300")
+                    +e('source').image(src="mages/content/main/980/upsport@x2.jpg", media="(min-width: 980px)" width="320" height="300")
+                    +e('source').image(src="mages/content/main/1440/upsport@x3.jpg", media="(min-width: 1440px)" width="320" height="300")
+                +b('h3')
+                    | upsport
+                +e('p')
+                    | Live communication platform that has changed the game for sport clubs, parents and their kids
+            +b('div').post
+                +e('picture').picture
+                    +e('img').image(src="images/content/main/320/xland.jpg", alt="" width="320" height="300")
+                    +e('source').image(src="mages/content/main/980/xland@x2.jpg", media="(min-width: 980px)" width="320" height="300")
+                    +e('source').image(src="mages/content/main/1440/xland@x3.jpg", media="(min-width: 1440px)" width="320" height="300")
+                +b('h3')
+                    | xland
+                +e('p')
+                    | Digital presence for the first indoor activity park in Norway
+        +b('a').link(href="javascript:void(0)" title="All projects").--block.--colored
             | All Projects
-            +e('a').link(href="javascript:void(0)").__link
-                | ->
+            +e('div').__arrow
     +b('section').team#team
         +b('div').post
-            +e('img').image(src="images/content/main/320/team-home.jpg", alt="" width="320" height="300")
+            +e('picture').picture
+                +e('img').image(src="images/content/main/320/team-home.jpg", alt="" width="320" height="300")
+                +e('source').image(src="mages/content/main/980/team-home@x2.jpg", media="(min-width: 980px)" width="320" height="300")
+                +e('source').image(src="mages/content/main/1440/team-home@x3.jpg", media="(min-width: 1440px)" width="320" height="300")
             +e('h3')
                 | our team
             +e('p')
@@ -117,7 +129,10 @@ block content
         +e('p').__text
             | We change the way businesses and industries operate.
         +b('div').post
-            +e('img').image(src="images/content/main/320/inside-press.jpg", alt="" width="320" height="300")
+            +e('picture')
+                +e('img').image(src="images/content/main/320/inside-press.jpg", alt="" width="320" height="300")
+                +e('source').image(src="mages/content/main/980/inside-press@x2.jpg", media="(min-width: 980px)" width="320" height="300")
+                +e('source').image(src="mages/content/main/1440/inside-press@x3.jpg", media="(min-width: 1440px)" width="320" height="300")
             +e('h3')
                 | Press about us
             +e('p')

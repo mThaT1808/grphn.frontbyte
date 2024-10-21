@@ -19,12 +19,6 @@ block head
 
 //- Выводим попапы
 block popup
-    //- ПопАпчики
-    include section/ui-kit/popup.pug
-    +popup()(data-popup='test')
-        div(style='background-color: white; height: 999px; width: 400px;') Тестовый текст
-            br
-            +popup_close()
 
 //- Выводим content
 block content
@@ -39,26 +33,27 @@ block content
                 | Drop us a line
                 +e('div').__arrow
     +b('section').about#about
-        +e('b').__heading
-            | We combine high level of professionalism and individual approach
-        +e('p').__text
-            | We have subject domain expertise in various aspects
-        +e('ul').__list
-            +e('li').__item
-                +e('div').__logo-wrapper
-                    +e('img').image(src="images/logo/digital.svg", alt="", width=30, height=30).__logo
-                +e('p').__description
-                    | Project management for simple and complex projects
-            +e('li').__item
-                +e('div').__logo-wrapper
-                    +e('img').image(src="images/logo/hire.svg", alt="" width="30" height="30").__logo
-                +e('p').__description
-                    | Management for hire
-            +e('li').__item
-                +e('div').__logo-wrapper
-                    +e('img').image(src="images/logo/project.svg", alt="" width="30" height="30").__logo
-                +e('p').__description
-                    | Digital transformation
+        .b-container
+            +e('p').__heading
+                | We combine high level of professionalism and individual approach
+            +e('p').__text
+                | We have subject domain expertise in various aspects
+            +e('ul').__list
+                +e('li').__item
+                    +e('div').__logo-wrapper
+                        +e('img').image(src="images/logo/project.svg", alt="", width=30, height=30)
+                    +e('p').__description
+                        | Project management for simple and complex projects
+                +e('li').__item
+                    +e('div').__logo-wrapper.--orange
+                        +e('img').image(src="images/logo/hire.svg", alt="" width="30" height="30").__logo
+                    +e('p').__description
+                        | Management for hire
+                +e('li').__item
+                    +e('div').__logo-wrapper.--pink
+                        +e('img').image(src="images/logo/digital.svg", alt="" width="30" height="30").__logo
+                    +e('p').__description
+                        | Digital transformation
     +b('section').service#service
         +b('h2').title
             | What We Do

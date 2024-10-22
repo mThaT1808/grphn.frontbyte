@@ -141,9 +141,12 @@ block content
     +b('section').news
         .b-container
             +b('div').news-slider
-                +b('button').button(type="button").--left-arrow
-                +e('img').image(src="images/logo/tc.svg" height="15px" width="30px")
-                +b('button').button(type="button").--right-arrow
+                //- +b('button').button(type="button").--left-arrow
+                div.slide
+                    +e('img').image(src="images/logo/tc.svg" height="15px" width="30px")
+                div.slide
+                    +e('img').image(src="images/logo/tc.svg" height="15px" width="30px")
+                //- +b('button').button(type="button").--right-arrow
             +b('h3').title.--label-mobile-dark
                 | Latest News
             +e('div').__post

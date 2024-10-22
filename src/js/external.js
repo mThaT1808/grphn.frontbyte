@@ -5,6 +5,7 @@
 @@include('external/modernizr-custom.js')
 @@include('node_modules/jquery/dist/jquery.min.js')
 @@include('external/ofi.min.js')
+@@include('node_modules/slick-slider/slick/slick.min.js')
 
 
 /* Select2 */

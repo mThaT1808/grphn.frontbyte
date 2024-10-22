@@ -11,6 +11,7 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "@babel/polyfill": "^7.12.1"
+    "@babel/polyfill": "^7.12.1",
+    "slick-slider": "^1.8.2"
   }
 }

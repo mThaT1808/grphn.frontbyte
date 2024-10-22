@@ -12,6 +12,7 @@
     @@include('partials/video.js');
     @@include('partials/tab.js');
     @@include('partials/news-slider.js');
+    @@include('partials/header-mobile.js');
   };
 
   document.addEventListener("DOMContentLoaded", documentReady);

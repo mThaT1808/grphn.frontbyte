@@ -8,11 +8,21 @@ mixin header()
     +b('header').header
         .b-container
             +e.__wrapper
-                +e('a').link(href="#" title="home").__home
-                    +e('img').image(src="../../images/logo/mobile/logo-mobile-light.svg", alt="").__logo
+                +e('a').link(href="#" title="home").--home
+                    include ../../section/ui-kit/images.pug
+                    +images(
+                        [
+                            {"srcset": "../../images/logo/logo-desktop-light.svg",
+                            "media": "(min-width: 980px)"}
+                        ],
+                        source="true",
+                        address="../../images/logo/mobile/logo-mobile-light.svg",
+                        width="130px",
+                        height="40px"
+                    )
                 +b('button').burger
                 +e.__functional
-                    +e('a').link(href="#" title="home").__home
+                    +e('a').link(href="#" title="home").--home
                         +e('img').image(src="../../images/logo/mobile/logo-mobile-dark.svg", alt="").__logo
                     +b('button').burger.--close
                     include nav.pug

@@ -1,1 +1,47 @@
-/* 768++  */
+/* 960++  */
+
+.b-contacts {
+    padding-top: 100px;
+    padding-bottom: 30px;
+position: relative;
+
+    .b-container {
+        padding-right: 0;
+
+        display: grid;
+        grid-template-columns: repeat(2, 380px);
+        column-gap: 118px;
+        grid-template-areas:
+            "title social"
+            "text map";
+    }
+
+    .b-title {
+        grid-area: title;
+    }
+
+    .b-social {
+        grid-area: social;
+    }
+
+    &__text {
+        font-size: 20px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+
+        margin-top: 75px;
+        grid-area: text;
+    }
+    .b-map {
+        grid-area: map;
+    }
+
+    .b-link--colored {
+        position: absolute;
+        width: 50%;
+        top: 100%;
+        left: 0;
+    }
+}

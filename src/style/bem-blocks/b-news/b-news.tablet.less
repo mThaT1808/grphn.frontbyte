@@ -1,1 +1,41 @@
-/* 768++  */
+/* 980++  */
+
+.b-news {
+    padding: 75px 0;
+
+    background-color: @cl-light-grayish-blue;
+
+    .b-title {
+        margin-bottom: 50px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 50px;
+    }
+    &__post {
+        font-size: 20px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: @dark;
+
+        width: 200px;
+
+        p {
+            margin-bottom: 13px;
+        }
+        time {
+            font-size: 15px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: @cool-grey;
+        }
+    }
+}

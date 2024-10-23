@@ -247,10 +247,25 @@ block content
             +b('div').post-slider
                 .slide
                     +b('div').post.--big
-                        +e('picture')
-                            +e('img').image(src="images/content/main/320/inside-press.jpg", alt="" width="320" height="300")
-                            +e('source').image(src="mages/content/main/980/inside-press@x2.jpg", media="(min-width: 980px)" width="320" height="300")
-                            +e('source').image(src="mages/content/main/1440/inside-press@x3.jpg", media="(min-width: 1440px)" width="320" height="300")
+                        include section/ui-kit/images.pug
+                        +images(
+                            [
+                                {"srcset": "images/content/main/1440/inside@3x.webp",
+                                "media": "(min-width: 1440px)"},
+                                {"srcset": "images/content/main/1440/inside@3x.jpg",
+                                "media": "(min-width: 1440px)"},
+                                {"srcset": "images/content/main/980/inside@2x.webp",
+                                "media": "(min-width: 980px)"},
+                                {"srcset": "images/content/main/980/inside@2x.jpg",
+                                "media": "(min-width: 980px)"},
+                                {"srcset": "images/content/main/320/inside.jpg",
+                                "media": "(min-width: 320px)and(max-width: 980px)"}
+                            ],
+                            source="true",
+                            address="../../images/content/main/320/inside.webp",
+                            width="320px",
+                            height="200px"
+                        )
                         +e('div').__content.--slider
                             +e('h3')
                                 | Press about us
@@ -317,21 +332,22 @@ block content
         .b-container
             +b('h3').title.--label-mobile-dark
                 | Latest News
-            +e('div').__post
-                +e('p')
-                    | How to use email marketing to connect with your users
-                +e('time')
-                    | Dec 19, 2018
-            +e('div').__post
-                +e('p')
-                    | How to use email marketing to connect with your users
-                +e('time')
-                    | Dec 19, 2018
-            +e('div').__post
-                +e('p')
-                    | How to use email marketing to connect with your users
-                +e('time')
-                    | Dec 19, 2018
+            +e.__wrapper
+                +e('div').__post
+                    +e('p')
+                        | How to use email marketing to connect with your users
+                    +e('time')
+                        | Dec 19, 2018
+                +e('div').__post
+                    +e('p')
+                        | How to use email marketing to connect with your users
+                    +e('time')
+                        | Dec 19, 2018
+                +e('div').__post
+                    +e('p')
+                        | How to use email marketing to connect with your users
+                    +e('time')
+                        | Dec 19, 2018
     +b('section').contacts#contacts
         .b-container
             +b('h2').title.--light

@@ -78,53 +78,153 @@ block content
         +b('a').link(href="javascript:void(0)" title="Services").--block.--colored
             | Services
             +e('div').__arrow
+
     +b('section').project#project
         .b-container
-            +b('h2').title
+            +b('h2').title.--mobile-dark
                 | Our Work
             +e('p').__text
                 | We change the way businesses and industries operate.
+            +b('div').post.--big
+                include section/ui-kit/images.pug
+                +images(
+                    [
+                        {"srcset": "images/content/main/1440/birdieeyes@3x.jpg",
+                        "media": "(min-width: 1440px)"},
+                        {"srcset": "images/content/main/1440/birdieeyes@3x.webp",
+                        "media": "(min-width: 1440px)"},
+                        {"srcset": "images/content/main/980/birdieeyes@2x.webp",
+                        "media": "(min-width: 980px)"},
+                        {"srcset": "images/content/main/980/birdieeyes@2x.jpg",
+                        "media": "(min-width: 980px)"},
+                        {"srcset": "images/content/main/320/birdieeyes.jpg",
+                        "media": "(min-width: 320px)and(max-width: 980px)"}
+                    ],
+                    source="true",
+                    address="../../images/content/main/320/birdieeyes.webp",
+                    width="320px",
+                    height="200px"
+                )
+                +e('div').__content.--colored
+                    +b('h3')
+                        | birdieeyes
+                    +e('p')
+                        | We have introduced AR technology into one of the most traditional games and made it even more interesting
             +b('div').post
-                +e('picture').picture
-                    +e('img').image(src="images/content/main/320/birdieeyes.jpg", alt="" width="320" height="300")
-                    +e('source').image(src="mages/content/main/980/birdieeyes@x2.jpg", media="(min-width: 980px)" width="320" height="300")
-                    +e('source').image(src="mages/content/main/1440/birdieeyes@x3.jpg", media="(min-width: 1440px)" width="320" height="300")
-                +b('h3')
-                    | birdieeyes
-                +e('p')
-                    | We have introduced AR technology into one of the most traditional games and made it even more interesting
+                include section/ui-kit/images.pug
+                +images(
+                    [
+                        {"srcset": "images/content/main/1440/upsport@3x.jpg",
+                        "media": "(min-width: 1440px)"},
+                        {"srcset": "images/content/main/1440/upsport@3x.webp",
+                        "media": "(min-width: 1440px)"},
+                        {"srcset": "images/content/main/980/upsport@2x.webp",
+                        "media": "(min-width: 980px)"},
+                        {"srcset": "images/content/main/980/upsport@2x.jpg",
+                        "media": "(min-width: 980px)"},
+                        {"srcset": "images/content/main/320/upsport.jpg",
+                        "media": "(min-width: 320px)and(max-width: 980px)"}
+                    ],
+                    source="true",
+                    address="../../images/content/main/320/upsport.webp",
+                    width="320px",
+                    height="200px"
+                )
+                +e('div').__content
+                    +b('h3')
+                        | upsport
+                    +e('p')
+                        | Live communication platform that has changed the game for sport clubs, parents and their kids
             +b('div').post
-                +e('picture').picture
-                    +e('img').image(src="images/content/main/320/upsport.jpg", alt="" width="320" height="300")
-                    +e('source').image(src="mages/content/main/980/upsport@x2.jpg", media="(min-width: 980px)" width="320" height="300")
-                    +e('source').image(src="mages/content/main/1440/upsport@x3.jpg", media="(min-width: 1440px)" width="320" height="300")
-                +b('h3')
-                    | upsport
-                +e('p')
-                    | Live communication platform that has changed the game for sport clubs, parents and their kids
-            +b('div').post
-                +e('picture').picture
-                    +e('img').image(src="images/content/main/320/xland.jpg", alt="" width="320" height="300")
-                    +e('source').image(src="mages/content/main/980/xland@x2.jpg", media="(min-width: 980px)" width="320" height="300")
-                    +e('source').image(src="mages/content/main/1440/xland@x3.jpg", media="(min-width: 1440px)" width="320" height="300")
-                +b('h3')
-                    | xland
-                +e('p')
-                    | Digital presence for the first indoor activity park in Norway
+                include section/ui-kit/images.pug
+                +images(
+                    [
+                        {"srcset": "images/content/main/1440/xland@3x.jpg",
+                        "media": "(min-width: 1440px)"},
+                        {"srcset": "images/content/main/1440/xland@3x.webp",
+                        "media": "(min-width: 1440px)"},
+                        {"srcset": "images/content/main/980/xland@2x.webp",
+                        "media": "(min-width: 980px)"},
+                        {"srcset": "images/content/main/980/xland@2x.jpg",
+                        "media": "(min-width: 980px)"},
+                        {"srcset": "images/content/main/320/xland.jpg",
+                        "media": "(min-width: 320px)and(max-width: 980px)"}
+                    ],
+                    source="true",
+                    address="../../images/content/main/320/xland.webp",
+                    width="320px",
+                    height="200px"
+                )
+                +e('div').__content
+                    +b('h3')
+                        | xland
+                    +e('p')
+                        | Digital presence for the first indoor activity park in Norway
+            +b('div').post.--optional
+                include section/ui-kit/images.pug
+                +images(
+                    [
+                        {"srcset": "images/content/main/1440/phonero@3x.webp",
+                        "media": "(min-width: 1440px)"},
+                        {"srcset": "images/content/main/1440/phonero@3x.jpg",
+                        "media": "(min-width: 1440px)"},
+                        {"srcset": "images/content/main/980/phonero@2x.webp",
+                        "media": "(min-width: 980px)"},
+                        {"srcset": "images/content/main/980/phonero@2x.jpg",
+                        "media": "(min-width: 980px)"},
+                        {"srcset": "images/content/main/320/phonero.jpg",
+                        "media": "(min-width: 320px)and(max-width: 980px)"}
+                    ],
+                    source="true",
+                    address="../../images/content/main/320/phonero.webp",
+                    width="320px",
+                    height="200px"
+                )
+                +e('div').__content
+                    +b('h3')
+                        | phonero
+                    +e('p')
+                        | Interfaces for the cloud based switchboard applications as well as various desktop and mobile applications
+            +b('div').post.--optional
+                include section/ui-kit/images.pug
+                +images(
+                    [
+                        {"srcset": "images/content/main/1440/kongsberg@3x.webp",
+                        "media": "(min-width: 1440px)"},
+                        {"srcset": "images/content/main/1440/kongsberg@3x.jpg",
+                        "media": "(min-width: 1440px)"},
+                        {"srcset": "images/content/main/980/kongsberg@2x.webp",
+                        "media": "(min-width: 980px)"},
+                        {"srcset": "images/content/main/980/kongsberg@2x.jpg",
+                        "media": "(min-width: 980px)"},
+                        {"srcset": "images/content/main/320/kongsberg.jpg",
+                        "media": "(min-width: 320px)and(max-width: 980px)"}
+                    ],
+                    source="true",
+                    address="../../images/content/main/320/kongsberg.webp",
+                    width="320px",
+                    height="200px"
+                )
+                +e('div').__content
+                    +b('h3')
+                        | Kongsberg Group
+                    +e('p')
+                        | Groundbreaking defence and aerospace systems
         +b('a').link(href="javascript:void(0)" title="All projects").--block.--colored
             | All Projects
             +e('div').__arrow
     +b('section').team#team
         .b-container
-            +b('div').post
+            +b('div').post.--big
                 +e('picture').picture
                     +e('img').image(src="images/content/main/320/team-home.jpg", alt="" width="320" height="300")
                     +e('source').image(src="mages/content/main/980/team-home@x2.jpg", media="(min-width: 980px)" width="320" height="300")
                     +e('source').image(src="mages/content/main/1440/team-home@x3.jpg", media="(min-width: 1440px)" width="320" height="300")
-                +e('h3')
-                    | our team
-                +e('p')
-                    | We are united by our passion to create unique and efficient digital products
+                +e('div').__content
+                    +e('h3')
+                        | our team
+                    +e('p')
+                        | We are united by our passion to create unique and efficient digital products
             +b('h2').title
                 | Inside Frontbyte
             +e('p').__text

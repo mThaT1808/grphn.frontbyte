@@ -1,10 +1,18 @@
 /* 980++  */
 
 .b-footer {
-    background-color: @dark;
+    background-color: @cl-black;
     display: flex;
     flex-direction: row-reverse;
     padding: 25px 0;
+    max-width: 1180px;
+    position: relative;
+    outline: none;
+    margin-top: -1px;
+    box-shadow: 0 2px 0 @cl-black;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
 
     &__link {
         font-size: 20px;

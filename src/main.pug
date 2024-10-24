@@ -107,7 +107,8 @@ block content
                 )
                 +e('div').__content.--colored
                     +b('h3')
-                        | birdieeyes
+                        +e('a').link(href="javascript:void(0);" title="ага")
+                            | birdieeyes
                     +e('p')
                         | We have introduced AR technology into one of the most traditional games and made it even more interesting
             +b('div').post
@@ -132,7 +133,8 @@ block content
                 )
                 +e('div').__content
                     +b('h3')
-                        | upsport
+                        +e('a').link(href="javascript:void(0);" title="ага")
+                            | upsport
                     +e('p')
                         | Live communication platform that has changed the game for sport clubs, parents and their kids
             +b('div').post
@@ -157,7 +159,8 @@ block content
                 )
                 +e('div').__content
                     +b('h3')
-                        | xland
+                        +e('a').link(href="javascript:void(0);" title="ага")
+                            | xland
                     +e('p')
                         | Digital presence for the first indoor activity park in Norway
             +b('div').post.--optional
@@ -182,7 +185,8 @@ block content
                 )
                 +e('div').__content
                     +b('h3')
-                        | phonero
+                        +e('a').link(href="javascript:void(0);" title="ага")
+                            | phonero
                     +e('p')
                         | Interfaces for the cloud based switchboard applications as well as various desktop and mobile applications
             +b('div').post.--optional
@@ -207,7 +211,8 @@ block content
                 )
                 +e('div').__content
                     +b('h3')
-                        | Kongsberg Group
+                        +e('a').link(href="javascript:void(0);" title="ага")
+                            | Kongsberg Group
                     +e('p')
                         | Groundbreaking defence and aerospace systems
         +b('a').link(href="javascript:void(0)" title="All projects").--block.--colored
@@ -237,7 +242,8 @@ block content
                 )
                 +e('div').__content.--right
                     +e('h3')
-                        | our team
+                        +e('a').link(href="javascript:void(0);" title="ага")
+                            | our team
                     +e('p')
                         | We are united by our passion to create unique and efficient digital products
             +b('h2').title.--mobile-dark
@@ -268,7 +274,8 @@ block content
                         )
                         +e('div').__content.--slider
                             +e('h3')
-                                | Press about us
+                                +e('a').link(href="javascript:void(0);" title="ага")
+                                    | Press about us
                             +e('p')
                                 | AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation
                 .slide
@@ -276,25 +283,53 @@ block content
                         include section/ui-kit/images.pug
                         +images(
                             [
-                                {"srcset": "images/content/main/1440/inside@3x.webp",
+                                {"srcset": "images/content/main/1440/xland@3x.webp",
                                 "media": "(min-width: 1440px)"},
-                                {"srcset": "images/content/main/1440/inside@3x.jpg",
+                                {"srcset": "images/content/main/1440/xland@3x.jpg",
                                 "media": "(min-width: 1440px)"},
-                                {"srcset": "images/content/main/980/inside@2x.webp",
+                                {"srcset": "images/content/main/980/xland@2x.webp",
                                 "media": "(min-width: 980px)"},
-                                {"srcset": "images/content/main/980/inside@2x.jpg",
+                                {"srcset": "images/content/main/980/xland@2x.jpg",
                                 "media": "(min-width: 980px)"},
-                                {"srcset": "images/content/main/320/inside.jpg",
+                                {"srcset": "images/content/main/320/xland.jpg",
                                 "media": "(min-width: 320px)and(max-width: 980px)"}
                             ],
                             source="true",
-                            address="../../images/content/main/320/inside.webp",
+                            address="../../images/content/main/320/xland.webp",
                             width="320px",
                             height="200px"
                         )
                         +e('div').__content.--slider
                             +e('h3')
-                                | Press about us
+                                +e('a').link(href="javascript:void(0);" title="ага")
+                                    | Press about us
+                            +e('p')
+                                | London is a capital of GREAT Britan
+                .slide
+                    +b('div').post.--big.--slider
+                        include section/ui-kit/images.pug
+                        +images(
+                            [
+                                {"srcset": "images/content/main/1440/upsport@3x.webp",
+                                "media": "(min-width: 1440px)"},
+                                {"srcset": "images/content/main/1440/upsport@3x.jpg",
+                                "media": "(min-width: 1440px)"},
+                                {"srcset": "images/content/main/980/upsport@2x.webp",
+                                "media": "(min-width: 980px)"},
+                                {"srcset": "images/content/main/980/upsport@2x.jpg",
+                                "media": "(min-width: 980px)"},
+                                {"srcset": "images/content/main/320/upsport.jpg",
+                                "media": "(min-width: 320px)and(max-width: 980px)"}
+                            ],
+                            source="true",
+                            address="../../images/content/main/320/upsport.webp",
+                            width="320px",
+                            height="200px"
+                        )
+                        +e('div').__content.--slider
+                            +e('h3')
+                                +e('a').link(href="javascript:void(0);" title="ага")
+                                    | Press about us
                             +e('p')
                                 | AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation
                 .slide
@@ -302,79 +337,55 @@ block content
                         include section/ui-kit/images.pug
                         +images(
                             [
-                                {"srcset": "images/content/main/1440/inside@3x.webp",
+                                {"srcset": "images/content/main/1440/phonero@3x.webp",
                                 "media": "(min-width: 1440px)"},
-                                {"srcset": "images/content/main/1440/inside@3x.jpg",
+                                {"srcset": "images/content/main/1440/phonero@3x.jpg",
                                 "media": "(min-width: 1440px)"},
-                                {"srcset": "images/content/main/980/inside@2x.webp",
+                                {"srcset": "images/content/main/980/phonero@2x.webp",
                                 "media": "(min-width: 980px)"},
-                                {"srcset": "images/content/main/980/inside@2x.jpg",
+                                {"srcset": "images/content/main/980/phonero@2x.jpg",
                                 "media": "(min-width: 980px)"},
-                                {"srcset": "images/content/main/320/inside.jpg",
+                                {"srcset": "images/content/main/320/phonero.jpg",
                                 "media": "(min-width: 320px)and(max-width: 980px)"}
                             ],
                             source="true",
-                            address="../../images/content/main/320/inside.webp",
+                            address="../../images/content/main/320/phonero.webp",
                             width="320px",
                             height="200px"
                         )
                         +e('div').__content.--slider
                             +e('h3')
-                                | Press about us
+                                +e('a').link(href="javascript:void(0);" title="ага")
+                                    | Press about us
                             +e('p')
-                                | AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation
+                                | Lorem ipsum dolor sit amet consectetur adipisicing.
                 .slide
                     +b('div').post.--big.--slider
                         include section/ui-kit/images.pug
                         +images(
                             [
-                                {"srcset": "images/content/main/1440/inside@3x.webp",
+                                {"srcset": "images/content/main/1440/kongsberg@3x.webp",
                                 "media": "(min-width: 1440px)"},
-                                {"srcset": "images/content/main/1440/inside@3x.jpg",
+                                {"srcset": "images/content/main/1440/kongsberg@3x.jpg",
                                 "media": "(min-width: 1440px)"},
-                                {"srcset": "images/content/main/980/inside@2x.webp",
+                                {"srcset": "images/content/main/980/kongsberg@2x.webp",
                                 "media": "(min-width: 980px)"},
-                                {"srcset": "images/content/main/980/inside@2x.jpg",
-                                "media": "(min-width: 980px)"},
-                                {"srcset": "images/content/main/320/inside.jpg",
-                                "media": "(min-width: 320px)and(max-width: 980px)"}
-                            ],
-                            source="true",
-                            address="../../images/content/main/320/inside.webp",
-                            width="320px",
-                            height="200px"
-                        )
-                        +e('div').__content.--slider
-                            +e('h3')
-                                | Press about us
-                            +e('p')
-                                | AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation
-                .slide
-                    +b('div').post.--big.--slider
-                        include section/ui-kit/images.pug
-                        +images(
-                            [
-                                {"srcset": "images/content/main/1440/inside@3x.webp",
-                                "media": "(min-width: 1440px)"},
-                                {"srcset": "images/content/main/1440/inside@3x.jpg",
-                                "media": "(min-width: 1440px)"},
-                                {"srcset": "images/content/main/980/inside@2x.webp",
-                                "media": "(min-width: 980px)"},
-                                {"srcset": "images/content/main/980/inside@2x.jpg",
+                                {"srcset": "images/content/main/980/kongsberg@2x.jpg",
                                 "media": "(min-width: 980px)"},
                                 {"srcset": "images/content/main/320/inside.jpg",
                                 "media": "(min-width: 320px)and(max-width: 980px)"}
                             ],
                             source="true",
-                            address="../../images/content/main/320/inside.webp",
+                            address="../../images/content/main/320/kongsberg.webp",
                             width="320px",
                             height="200px"
                         )
                         +e('div').__content.--slider
                             +e('h3')
-                                | Press about us
+                                +e('a').link(href="javascript:void(0);" title="ага")
+                                    | Press about us
                             +e('p')
-                                | AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation
+                                | Konigsbergs citizens on fire after the cakes-fabrik explosion
             +b('div').news-slider
                 //- +b('button').button(type="button").--left-arrow
                 div.slide
@@ -395,17 +406,20 @@ block content
             +e.__wrapper
                 +e('div').__post
                     +e('p')
-                        | How to use email marketing to connect with your users
+                        +e('a').link(href="javascript:void(0);" title="hew")
+                            | How to use email marketing to connect with your users
                     +e('time')
                         | Dec 19, 2018
                 +e('div').__post
                     +e('p')
-                        | How to use email marketing to connect with your users
+                        +e('a').link(href="javascript:void(0);" title="hew")
+                            | How to use email marketing to connect with your users
                     +e('time')
                         | Dec 19, 2018
                 +e('div').__post
                     +e('p')
-                        | How to use email marketing to connect with your users
+                        +e('a').link(href="javascript:void(0);" title="hew")
+                            | How to use email marketing to connect with your users
                     +e('time')
                         | Dec 19, 2018
     +b('section').contacts#contacts

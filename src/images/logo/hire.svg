@@ -1,9 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="26" height="61" viewBox="0 0 26 61">
-    <g fill="none" fill-rule="evenodd">
-        <path stroke="#2E2E41" stroke-width="2" d="M18.5 46.192l3.686 1.562 1.883-3.3-7.917-22.82"/>
-        <path fill="#FFF" d="M1.798 2.588c-1.763 1.309.477 5.789 1.88 8.212a28.608 28.608 0 0 1 8.467-.078c1.405-2.44 3.58-6.84 1.832-8.134 0 0-5.158-3.573-12.179 0"/>
-        <path stroke="#2E2E41" stroke-width="2" d="M1.798 2.588c-1.763 1.309.477 5.789 1.88 8.212a28.608 28.608 0 0 1 8.467-.078c1.405-2.44 3.58-6.84 1.832-8.134 0 0-5.158-3.573-12.179 0z"/>
-        <path fill="#FFF" d="M4.593 14.919L1.04 52.054l7.065 7.022 6.63-7.022-3.56-37.206"/>
-        <path stroke="#2E2E41" stroke-width="2" d="M4.593 14.919L1.04 52.054l7.065 7.022 6.63-7.022-3.56-37.206"/>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px"
+	 height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+<g id="Слой_2">
+	<circle fill="#F47E3D" cx="25" cy="25" r="25"/>
+</g>
+<g id="Слой_1">
+	<g>
+		<path fill="none" stroke="#2E2E41" stroke-width="1.25" d="M30.9,33.7l2.1,0.9l1.1-1.9l-4.5-12.9"/>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M21.5,9c-1,0.7,0.3,3.3,1.1,4.6c1.6-0.3,3.2-0.3,4.8,0
+			c0.8-1.4,2-3.9,1-4.6C28.4,9,25.4,7,21.5,9"/>
+		<path fill="none" stroke="#2E2E41" stroke-width="1.25" d="M21.5,9c-1,0.7,0.3,3.3,1.1,4.6c1.6-0.3,3.2-0.3,4.8,0
+			c0.8-1.4,2-3.9,1-4.6C28.4,9,25.4,7,21.5,9z"/>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M23.1,16l-2,21l4,4l3.7-4l-2-21"/>
+		<path fill="none" stroke="#2E2E41" stroke-width="1.25" d="M23.1,16l-2,21l4,4l3.7-4l-2-21"/>
+	</g>
+</g>
 </svg>

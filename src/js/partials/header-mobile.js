@@ -20,4 +20,14 @@
         }
         e.target.classList.add("b-language__button--active")
     }
+
+    const pageWrapper = document.querySelector(".b-page-wrapper");
+    pageWrapper.addEventListener('scroll', function () {
+        const header = document.querySelector('.b-header');
+        if (pageWrapper.scrollTop > 70) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
 })();

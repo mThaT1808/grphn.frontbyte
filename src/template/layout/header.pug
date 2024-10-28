@@ -24,10 +24,12 @@ mixin header()
                             height="40px"
                         ).--logo
                 +b('button').burger
+                    +e.visual
                 +e.__functional
                     +e('a').link(href="#" title="home").--home
                         +e('img').image(src="../../images/logo/mobile/logo-mobile-dark.svg", alt="").__logo
                     +b('button').burger.--close
+                        +e.visual
                     include nav.pug
                     +nav()
                     +b.language

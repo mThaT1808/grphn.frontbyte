@@ -25,13 +25,25 @@ block content
 
     +b('section').hero
         .b-container
-            +e('p').__heading
+            +e('h1').__heading
                 | We provide digital services and develop our own products in sports and iHealth industry
             +e().__content
                 | We put technology and sport together to create the world's most efficient and popular sports apps.
             +b('a').link(href="javascript:void(0)" title="drop us a line").--block.--hero
                 | Drop us a line
                 +e('div').__arrow
+            +e('div').background
+                include section/ui-kit/images.pug
+                +images(
+                    [
+                        {"srcset": "../../images/content/main/1440/hero-background2x.jpg",
+                        "media": "(min-width: 1440px)"}
+                    ],
+                    source="true",
+                    address="../../images/content/main/980/hero-background.jpg",
+                    width="768px",
+                    height="500px"
+                )
     +b('section').about#about
         .b-container
             +e('p').__heading

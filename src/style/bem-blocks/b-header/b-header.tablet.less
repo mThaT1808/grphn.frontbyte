@@ -2,10 +2,6 @@
 
 .b-header {
     padding: 40px 0px;
-    max-width: 1180px;
-
-    left: 50%;
-    transform: translateX(-50%);
 
     .b-burger {
         display: none;
@@ -44,13 +40,16 @@
             align-items: center;
             height: 100%;
 
-            gap: 58px;
+            gap: 20px;
             margin-left: 60px;
+            margin-right: 20px;
         }
 
         &__item {
             font-size: 15px;
             line-height: 20px;
+
+            flex-grow: 1;
         }
 
         &__link {

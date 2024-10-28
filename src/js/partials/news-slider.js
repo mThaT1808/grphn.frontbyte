@@ -2,8 +2,8 @@ $('.b-post-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    fade: true,
-    infinite: true,
+    fade: false,
+    infinite: false,
     asNavFor: '.b-news-slider'
 });
 
@@ -13,7 +13,7 @@ $('.b-news-slider').slick({
     arrows: false,
     dots: true,
     fade: true,
-    infinite: true,
+    infinite: false,
     autoplay: true,
     autoplaySpeed: 6000,
     asNavFor: '.b-post-slider',

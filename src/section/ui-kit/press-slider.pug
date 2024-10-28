@@ -1,0 +1,20 @@
+mixin press-slider(obj)
+    +b('div').post-slider
+        each item in obj
+            .slide
+                include images.pug
+                +images(
+                    item.sources,
+                    source="true",
+                    address=item.address,
+                    width="320px",
+                    height="200px"
+                )
+    +b('div').news-slider
+        each item in obj
+            .slide
+                +e.wrapper
+                    +b('h3').title.--label-mobile-dark press about us
+                    +e('p').__text #{item.text}
+                    +e('picture').logo-container
+                        +e('img').image(src=item.press alt='' height="15px" width="30px")

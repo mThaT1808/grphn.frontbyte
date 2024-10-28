@@ -23,6 +23,14 @@
         position: relative;
         background-color: transparent;
     }
+
+    &--left-arrow.slick-disabled,
+    &--right-arrow.slick-disabled {
+        &::before,
+        &::after {
+            background-color: @silver;
+        }
+    }
     &--left-arrow:active,
     &--right-arrow:active {
         opacity: 0.5;
@@ -38,6 +46,7 @@
         position: absolute;
         top: 50%;
     }
+
 
     &--left-arrow::before,
     &--left-arrow::after {

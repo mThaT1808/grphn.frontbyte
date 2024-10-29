@@ -4,12 +4,13 @@
     padding-top: 100px;
     padding-bottom: 30px;
     position: relative;
+    margin-right: -60px;
 
-    .b-container {
+    &__wrapper {
         padding-right: 0;
 
         display: grid;
-        grid-template-columns: repeat(2, 380px);
+        grid-template-columns: repeat(2, calc(~"50% - 110px"));
         column-gap: 118px;
         grid-template-areas:
             "title social"

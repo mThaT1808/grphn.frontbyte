@@ -3,18 +3,14 @@
 .b-project {
     background-color: @cl-light-grayish-blue;
     padding-top: 100px;
+    margin-left: -100px;
+    margin-right: -60px;
 
-
-    .b-container {
-        padding: 0;
-
+    &__wrapper {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .b-title {
-        margin-left: 100px;
-    }
 
     &__text {
         font-size: 30px;
@@ -25,13 +21,5 @@
         color: @dark;
 
         margin: 25px 0 90px 100px;
-    }
-
-    .b-post--optional {
-        display: block;
-    }
-
-    .b-link--colored {
-        display: none;
     }
 }

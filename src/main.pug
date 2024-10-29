@@ -87,102 +87,103 @@ block content
                     | UX/UI concepts and design
                 +e('li').__item.__item--line
                     | Video and motion design
-        +b('a').link(href="javascript:void(0)" title="Services").--block.--colored
+        +b('a').link(href="javascript:void(0)" title="Services").--block.--colored.--mobile
             | Services
             +e('div').__arrow
 
     +b('section').project#project
         .b-container
-            +b('h2').title.--mobile-dark
-                | Our Work
-            +e('p').__text
-                | We change the way businesses and industries operate.
-            +b('div').post.--big
-                include section/ui-kit/images.pug
-                +images(
-                    [
-                        {"srcset": "images/content/main/birdieeyes.jpg"},
-                    ],
-                    source="true",
-                    address="../../images/content/main/birdieeyes.webp",
-                    width="320px",
-                    height="200px"
-                )
-                +e('div').__content.--colored
-                    +b('h3')
-                        +e('a').link(href="javascript:void(0);" title="ага")
-                            | birdieeyes
-                    +e('p')
-                        | We have introduced AR technology into one of the most traditional games and made it even more interesting
-            +b('div').post
-                include section/ui-kit/images.pug
-                +images(
-                    [
-                        {"srcset": "images/content/main/upsport.jpg"}
-                    ],
-                    source="true",
-                    address="../../images/content/main/upsport.webp",
-                    width="320px",
-                    height="200px"
-                )
-                +e('div').__content
-                    +b('h3')
-                        +e('a').link(href="javascript:void(0);" title="ага")
-                            | upsport
-                    +e('p')
-                        | Live communication platform that has changed the game for sport clubs, parents and their kids
-            +b('div').post
-                include section/ui-kit/images.pug
-                +images(
-                    [
-                        {"srcset": "images/content/main/xland.jpg"}
-                    ],
-                    source="true",
-                    address="../../images/content/main/xland.webp",
-                    width="320px",
-                    height="200px"
-                )
-                +e('div').__content
-                    +b('h3')
-                        +e('a').link(href="javascript:void(0);" title="ага")
-                            | xland
-                    +e('p')
-                        | Digital presence for the first indoor activity park in Norway
-            +b('div').post.--optional
-                include section/ui-kit/images.pug
-                +images(
-                    [
-                        {"srcset": "images/content/main/phonero.jpg"}
-                    ],
-                    source="true",
-                    address="../../images/content/main/phonero.webp",
-                    width="320px",
-                    height="200px"
-                )
-                +e('div').__content
-                    +b('h3')
-                        +e('a').link(href="javascript:void(0);" title="ага")
-                            | phonero
-                    +e('p')
-                        | Interfaces for the cloud based switchboard applications as well as various desktop and mobile applications
-            +b('div').post.--optional
-                include section/ui-kit/images.pug
-                +images(
-                    [
-                        {"srcset": "images/content/main/kongsberg.webp"}
-                    ],
-                    source="true",
-                    address="../../images/content/main/kongsberg.webp",
-                    width="320px",
-                    height="200px"
-                )
-                +e('div').__content
-                    +b('h3')
-                        +e('a').link(href="javascript:void(0);" title="ага")
-                            | Kongsberg Group
-                    +e('p')
-                        | Groundbreaking defence and aerospace systems
-        +b('a').link(href="javascript:void(0)" title="All projects").--block.--colored
+            +e.wrapper
+                +b('h2').title.--mobile-dark.--project
+                    | Our Work
+                +e('p').__text
+                    | We change the way businesses and industries operate.
+                +b('div').post.--big
+                    include section/ui-kit/images.pug
+                    +images(
+                        [
+                            {"srcset": "images/content/main/birdieeyes.jpg"},
+                        ],
+                        source="true",
+                        address="../../images/content/main/birdieeyes.webp",
+                        width="320px",
+                        height="200px"
+                    )
+                    +e('div').__content.--colored
+                        +b('h3')
+                            +e('a').link(href="javascript:void(0);" title="ага")
+                                | birdieeyes
+                        +e('p')
+                            | We have introduced AR technology into one of the most traditional games and made it even more interesting
+                +b('div').post
+                    include section/ui-kit/images.pug
+                    +images(
+                        [
+                            {"srcset": "images/content/main/upsport.jpg"}
+                        ],
+                        source="true",
+                        address="../../images/content/main/upsport.webp",
+                        width="320px",
+                        height="200px"
+                    )
+                    +e('div').__content
+                        +b('h3')
+                            +e('a').link(href="javascript:void(0);" title="ага")
+                                | upsport
+                        +e('p')
+                            | Live communication platform that has changed the game for sport clubs, parents and their kids
+                +b('div').post
+                    include section/ui-kit/images.pug
+                    +images(
+                        [
+                            {"srcset": "images/content/main/xland.jpg"}
+                        ],
+                        source="true",
+                        address="../../images/content/main/xland.webp",
+                        width="320px",
+                        height="200px"
+                    )
+                    +e('div').__content
+                        +b('h3')
+                            +e('a').link(href="javascript:void(0);" title="ага")
+                                | xland
+                        +e('p')
+                            | Digital presence for the first indoor activity park in Norway
+                +b('div').post.--optional
+                    include section/ui-kit/images.pug
+                    +images(
+                        [
+                            {"srcset": "images/content/main/phonero.jpg"}
+                        ],
+                        source="true",
+                        address="../../images/content/main/phonero.webp",
+                        width="320px",
+                        height="200px"
+                    )
+                    +e('div').__content
+                        +b('h3')
+                            +e('a').link(href="javascript:void(0);" title="ага")
+                                | phonero
+                        +e('p')
+                            | Interfaces for the cloud based switchboard applications as well as various desktop and mobile applications
+                +b('div').post.--optional
+                    include section/ui-kit/images.pug
+                    +images(
+                        [
+                            {"srcset": "images/content/main/kongsberg.webp"}
+                        ],
+                        source="true",
+                        address="../../images/content/main/kongsberg.webp",
+                        width="320px",
+                        height="200px"
+                    )
+                    +e('div').__content
+                        +b('h3')
+                            +e('a').link(href="javascript:void(0);" title="ага")
+                                | Kongsberg Group
+                        +e('p')
+                            | Groundbreaking defence and aerospace systems
+        +b('a').link(href="javascript:void(0)" title="All projects").--block.--colored.--mobile
             | All Projects
             +e('div').__arrow
     +b('section').team#team
@@ -204,7 +205,7 @@ block content
                             | our team
                     +e('p')
                         | We are united by our passion to create unique and efficient digital products
-            +b('h2').title.--mobile-dark
+            +b('h2').title.--mobile-dark.--team
                 | Inside Frontbyte
             +e('p').__text
                 | We change the way businesses and industries operate.
@@ -271,7 +272,7 @@ block content
 
     +b('section').news
         .b-container
-            +b('h3').title.--label-mobile-dark
+            +b('h3').title.--label-mobile-dark.--news
                 | Latest News
             +e.__wrapper
                 +e('div').__post

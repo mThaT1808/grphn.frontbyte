@@ -20,7 +20,9 @@
     &--right-arrow {
         width: 30px;
         height: 30px;
-        position: relative;
+        position: absolute;
+        bottom: -7px;
+        z-index: 1;
         background-color: transparent;
     }
 
@@ -68,5 +70,13 @@
     &--right-arrow::before,
     &--left-arrow::after {
         transform: rotate(45deg);
+    }
+
+    &--left-arrow {
+        left: 0;
+    }
+
+    &--right-arrow {
+        right: 0;
     }
 }

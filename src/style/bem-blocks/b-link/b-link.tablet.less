@@ -1,24 +1,49 @@
 /* 980 + */
 
 .b-link {
+
+    &__arrow {
+        width: 30px;
+        right: 50px;
+    }
+
+    &--hero,
     &--colored {
         font-size: 20px;
+        font-weight: 300;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.5;
         letter-spacing: normal;
+        color: @cl-light-grayish-blue;
 
-        padding: 25px 100px;
+        position: absolute;
+        width: calc(~"50% - 20px");
+
+        transition-property: background-color;
+        transition-duration: @animation-time;
 
         &:hover {
-            color: @dark;
-
-            background-color: @cl-light-grayish-blue;
+            background-color: @black-40;
         }
+
     }
 
-    &__arrow {
-        right: 20px;
+    &--hero {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-left-color: transparent;
+        padding: 25px 100px;
+        bottom: 0;
+        left: -0;
+    }
 
+    &--colored {
+        top: 100%;
+        left: 0;
+        padding: 25px 100px;
+    }
+
+    &--mobile {
+        display: none;
     }
 }

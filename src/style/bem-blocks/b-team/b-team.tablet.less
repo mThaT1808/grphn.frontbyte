@@ -8,13 +8,24 @@
         padding: 0;
     }
 
+    .b-images {
+
+        &__image {
+            height: 600px;
+            width: 100%;
+        }
+    }
 
     .b-title {
-        margin-top: 100px;
 
-        &::before {
-            display: none;
+        &--mobile-dark {
+            margin-top: 100px;
+
+            &::before {
+                display: none;
+            }
         }
+
     }
     &__text {
         font-size: 30px;
@@ -28,20 +39,7 @@
     }
 
     &__text,
-    .b-title {
+    .b-title--mobile-dark {
         margin-left: 100px;
-    }
-
-    .b-post__content {
-        padding: 40px;
-    }
-
-    .b-post-slider {
-        margin-left: 0;
-        width: 100%;
-
-        .b-images {
-            margin-left: 0px;
-        }
     }
 }

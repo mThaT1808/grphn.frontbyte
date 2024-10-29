@@ -22,7 +22,7 @@ $('.b-news-slider').slick({
 
     responsive: [{
 
-        breakpoint: 980,
+        breakpoint: 768,
         settings: {
             arrows: true,
             dots: false,

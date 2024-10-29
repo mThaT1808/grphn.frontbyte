@@ -262,53 +262,6 @@ block content
                 | Inside Frontbyte
             +e('p').__text
                 | We change the way businesses and industries operate.
-            +b('div').post-slider
-                .slide
-                    include section/ui-kit/images.pug
-                    +images(
-                        [
-                            {"srcset": "images/content/main/1440/inside@3x.webp",
-                            "media": "(min-width: 1440px)"},
-                            {"srcset": "images/content/main/1440/inside@3x.jpg",
-                            "media": "(min-width: 1440px)"},
-                            {"srcset": "images/content/main/980/inside@2x.webp",
-                            "media": "(min-width: 980px)"},
-                            {"srcset": "images/content/main/980/inside@2x.jpg",
-                            "media": "(min-width: 980px)"},
-                            {"srcset": "images/content/main/320/inside.jpg",
-                            "media": "(min-width: 320px)and(max-width: 980px)"}
-                        ],
-                        source="true",
-                        address="../../images/content/main/320/inside.webp",
-                        width="320px",
-                        height="200px"
-                    )
-                .slide
-                    include section/ui-kit/images.pug
-                    +images(
-                        [
-                            {"srcset": "images/content/main/1440/inside@3x.webp",
-                            "media": "(min-width: 1440px)"},
-                            {"srcset": "images/content/main/1440/inside@3x.jpg",
-                            "media": "(min-width: 1440px)"},
-                            {"srcset": "images/content/main/980/inside@2x.webp",
-                            "media": "(min-width: 980px)"},
-                            {"srcset": "images/content/main/980/inside@2x.jpg",
-                            "media": "(min-width: 980px)"},
-                            {"srcset": "images/content/main/320/inside.jpg",
-                            "media": "(min-width: 320px)and(max-width: 980px)"}
-                        ],
-                        source="true",
-                        address="../../images/content/main/320/inside.webp",
-                        width="320px",
-                        height="200px"
-                    )
-            +b('div').news-slider
-                //- +b('button').button(type="button").--left-arrow
-                div.slide
-                    +e('img').image(src="images/logo/tc.svg" height="15px" width="30px")
-                div.slide
-                    +e('img').image(src="images/logo/tc.svg" height="15px" width="30px")
             include section/ui-kit/press-slider.pug
             +press-slider(
                 [
@@ -326,12 +279,12 @@ block content
                     {
                         "sources": [
                             {
-                                "srcset": "images/content/main/1440/inside@3x.webp",
-                                "media": "(min-width: 1440px)"
+                                "srcset": "images/content/main/1440/birdieeyes@3x.webp",
+                                "media": "(min-width: 1366px)"
                             }
                         ],
-                        "address": "images/content/main/1440/inside@3x.jpg",
-                        "text": "AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation",
+                        "address": "images/content/main/1440/birdieeyes @3x.jpg",
+                        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing.",
                         "press": "images/logo/tc.svg"
                     },
                 ]

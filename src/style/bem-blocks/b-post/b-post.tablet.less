@@ -76,6 +76,31 @@
 
         background-color: @cl-light-grayish-blue;
 
+        &::-webkit-scrollbar{
+            width: 10px; /* Ширина скролла */
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: @dark;
+            opacity: 0.5; /* Цвет ползунка */ /* Скругление углов */
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            opacity: 1; /* Цвет ползунка при наведении */
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent/* Цвет дорожки скролла */
+        }
+
+        &::-webkit-scrollbar-button {
+            display: none; /* Скрываем стрелочки */
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
         &--colored {
             background-color: @dark-sky-blue;
 

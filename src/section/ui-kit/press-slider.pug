@@ -15,6 +15,7 @@ mixin press-slider(obj)
             .slide
                 +e.wrapper
                     +b('h3').title.--label-mobile-dark.--slider press about us
-                    +e('p').__text #{item.text}
-                    +e('picture').logo-container
-                        +e('img').image(src=item.press alt='' height="15px" width="30px")
+                    +e.link(href=item.href title=item.href  )
+                        +e('p').__text #{item.text}
+                        +e('picture').logo-container
+                            +e('img').image(src=item.press alt='' height="15px" width="30px")

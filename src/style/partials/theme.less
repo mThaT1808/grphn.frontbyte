@@ -172,7 +172,18 @@ select {
     padding: 0;
 }
 
-// placeholder 
+//scrollbar
+
+::-webkit-scrollbar {
+    width: 0px; /* Ширина полосы прокрутки */
+}
+
+
+/* Для Firefox */
+// scrollbar-color: #888 #f1f1f1; /* Цвет ползунка и фона */
+// scrollbar-width: thin; /* Ширина полосы прокрутки */
+
+// placeholder
 ::-webkit-input-placeholder {
     color: @cl-theme-global;
     opacity: 1;

@@ -13,6 +13,7 @@
     @@include('partials/tab.js');
     @@include('partials/news-slider.js');
     @@include('partials/header-mobile.js');
+    @@include('partials/scrollbar.js');
   };
 
   document.addEventListener("DOMContentLoaded", documentReady);

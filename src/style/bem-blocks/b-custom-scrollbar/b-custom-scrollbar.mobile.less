@@ -1,0 +1,31 @@
+/* 320++  */
+
+.b-custom-scrollbar {
+    position: absolute;
+    z-index: 5;
+    width: 15px;
+    right: 0;
+    border-radius: 1px;
+    cursor: pointer;
+
+    user-select: none; /* Для большинства браузеров */
+    -webkit-user-select: none; /* Для Safari */
+    -moz-user-select: none; /* Для Firefox */
+
+    &__thumb {
+        background: @dark-sky-blue;
+        opacity: 0.5;
+        position: absolute;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        border-radius: 5px;
+
+        transition: width, @animation-time;
+    }
+
+    &:hover &__thumb {
+        width: 100%;
+        opacity: 1;
+    }
+}

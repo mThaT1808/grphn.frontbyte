@@ -34,28 +34,25 @@ block content
         ],
         "addres": "../../images/content/main/1440/hero-background2x.jpg"
     })
-    +b('section').about#about
-        .b-container
-            +e('p').__heading
-                | We combine high level of professionalism and individual approach
-            +e('p').__text
-                | We have subject domain expertise in various aspects
-            +e('ul').__list
-                +e('li').__item
-                    +e('picture').__logo-wrapper
-                        +e('img').image(src="images/logo/project.svg", alt="", width="50", height="50").__logo
-                    +e('p').__description
-                        | Project management for simple and complex projects
-                +e('li').__item
-                    +e('picture').__logo-wrapper
-                        +e('img').image(src="images/logo/hire.svg", alt="" width="50" height="50").__logo
-                    +e('p').__description
-                        | Management for hire
-                +e('li').__item
-                    +e('div').__logo-wrapper
-                        +e('img').image(src="images/logo/digital.svg", alt="" width="50" height="50").__logo
-                    +e('p').__description
-                        | Digital transformation
+    include section/about.pug
+    +about({
+        "heading": "We combine high level of professionalism and individual approach",
+        "text": "We have subject domain expertise in various aspects",
+        "items": [
+            {
+                "src": "images/logo/project.svg",
+                "description": "Project management for simple and complex projects"
+            },
+            {
+                "src": "images/logo/hire.svg",
+                "description": "Management for hire"
+            },
+            {
+                "src": "images/logo/digital.svg",
+                "description": "Digital transformation"
+            },
+        ]
+    })
     +b('section').service#service
         .b-container
             +b('h2').title.--mobile-grey

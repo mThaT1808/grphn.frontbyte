@@ -1,0 +1,9 @@
+mixin service(obj)
+    +b('section').service#service
+        .b-container
+            +b('h2').title.--mobile-grey #{obj.title}
+            +e('ul').__list
+                each item in obj.items
+                    +e('li').__item.__item--line #{item}
+        +b('a').link(href=obj.linkHref title=obj.linkTitle).--block.--colored.--mobile #{obj.linkTitle}
+            +e('div').__arrow

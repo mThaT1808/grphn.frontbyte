@@ -1,0 +1,48 @@
+mixin contacts(obj)
+    +b('section').contacts#contacts
+        .b-container
+            +e.wrapper
+                +b('h2').title.--light #{obj.title}
+                +e('p').__text #{obj.text}
+                include ui-kit/social.pug
+                +social({
+                    "socials": [
+                        {
+                            "linkHref": "javascript:void(0);",
+                            "linkTitle": "linkedIn",
+                            "image": "../images/logo/mobile/linkedin-white.svg"
+                        },
+                        {
+                            "linkHref": "javascript:void(0);",
+                            "linkTitle": "linkedIn",
+                            "image": "../images/logo/mobile/linkedin-white.svg"
+                        },
+                        {
+                            "linkHref": "javascript:void(0);",
+                            "linkTitle": "linkedIn",
+                            "image": "../images/logo/mobile/linkedin-white.svg"
+                        },
+                    ],
+                })
+                +b('div').map
+                    +e('img').image(src="images/content/main/map.svg")
+                    +e('div').office
+                    +e('div').office.--belarus
+                include ui-kit/office
+                +office({
+                    "country": "Norway",
+                    "city": "Kristiansand",
+                    "addres": "Vestre strandgate, 23, 4th and 6th floor N-4611",
+                    "email": "contact@frontbyte.no",
+                    "phone": "+47 416 36 983"
+                })
+                +office({
+                    "country": "Belarus",
+                    "city": "Minsk",
+                    "addres": "Dombrovskaya str., 9, оffice 10.2.2",
+                    "email": "contact@frontbyte.by",
+                    "phone": "+375 29 1393336"
+                })
+
+        +b('a').link(href=obj.linkHref title=obj.linkTitle).--block.--colored.--footer #{obj.linkTitle}
+            +e('div').__arrow

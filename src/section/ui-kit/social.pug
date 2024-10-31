@@ -1,0 +1,8 @@
+mixin social(obj)
+    +b('div').social
+        +e('ul').__list
+            each social in obj.socials
+                +e('li').__item
+                    +e('a').link(href=social.linkHref title=social.linkTitle)
+                        +e('picture').wrapper
+                            +e('img').image(src=social.image, alt="", width="30" height="30")

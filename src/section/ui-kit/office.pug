@@ -1,0 +1,8 @@
+mixin office(obj)
+    +b('div').office
+        +e('p').__country #{obj.country}
+        +e('div').__info
+            +e('p').__city #{obj.city}
+            +e('p').__addres #{obj.addres}
+            +e('a').link(href=("email:" + obj.email) title=obj.email).__email #{obj.email}
+            +e('a').link(href=("tel:" + obj.phone)).__phone #{obj.phone}

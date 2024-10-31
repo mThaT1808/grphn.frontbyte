@@ -1,0 +1,15 @@
+mixin post(obj)
+    +b('div')(class=("post" + (obj.class ? obj.class : "")))
+        +e('a').link(href=obj.linkHref title=obj.linkTitle)
+            include images.pug
+            +images(
+                obj.sources,
+                source="true",
+                address=obj.addres,
+                width="320px",
+                height="200px"
+            )
+        +e('div')(class=("content" + (obj.contentClass? obj.contentClass: "")))
+            +b('h3')
+                +e('a').link(href=obj.linkHref title=linkTitle) #{obj.title}
+            +e('p') #{obj.content}

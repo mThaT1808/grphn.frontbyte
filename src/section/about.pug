@@ -1,0 +1,11 @@
+mixin about(obj)
+    +b('section').about#about
+        .b-container
+            +e('p').__heading #{obj.heading}
+            +e('p').__text #{obj.text}
+            +e('ul').__list
+                each item in obj.items
+                    +e('li').__item
+                        +e('picture').__logo-wrapper
+                            +e('img').image(src=item.src, alt="", width="50", height="50").__logo
+                        +e('p').__description #{item.description}

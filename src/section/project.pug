@@ -1,0 +1,20 @@
+mixin project(obj)
+    +b('section').project#project
+        .b-container
+            +e.wrapper
+                +b('h2').title.--mobile-dark.--project #{obj.title}
+                +e('p').__text #{obj.text}
+                each post in obj.posts
+                    include ui-kit/post.pug
+                    +post({
+                        "class": post.class,
+                        "linkHref": post.linkHref,
+                        "linkTitle": post.linkTitle,
+                        "sources": post.sources,
+                        "addres": post.addres,
+                        "title": post.title,
+                        "content": post.content,
+                        "contentClass": post.contentClass
+                    })
+        +b('a').link(href=obj.linkHref title=obj.linkTitle).--block.--colored.--mobile #{obj.linkTitle}
+            +e('div').__arrow

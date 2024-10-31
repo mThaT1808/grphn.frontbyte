@@ -1,0 +1,10 @@
+mixin news(obj)
+    +b('section').news
+        .b-container
+            +b('h3').title.--label-mobile-dark.--news #{obj.title}
+            +e.__wrapper
+                each post in obj.posts
+                    +e('div').__post
+                        +e('p')
+                            +e('a').link(href=post.linkHref title=post.linkTitle) #{post.text}
+                        +e('time') #{post.time}

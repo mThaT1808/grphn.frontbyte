@@ -1,0 +1,18 @@
+mixin team(obj)
+    +b('section').team#team
+        .b-container
+            each post in obj.posts
+                include ui-kit/post.pug
+                +post({
+                    "class": post.class,
+                    "linkHref": post.linkHref,
+                    "linkTitle": post.linkTitle,
+                    "sources": post.sources,
+                    "addres": post.addres,
+                    "title": post.title,
+                    "content": post.content,
+                    "contentClass": post.contentClass
+                })
+            +b('h2').title.--mobile-dark.--team #{obj.title}
+            +e('p').__text #{obj.text}
+            block

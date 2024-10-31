@@ -117,95 +117,91 @@ block content
         "linkHref": "javascript:void(0);",
         "linkTitle": "All projects"
     })
-    +b('section').team#team
-        .b-container
-            +b('div').post.--big
-                +e('a').link(href="javascript:void(0);" title="ага")
-                    include section/ui-kit/images.pug
-                    +images(
-                        [
-                            {"srcset": "images/content/main/team.jpg"}
-                        ],
-                        source="true",
-                        address="../../images/content/main/team.webp",
-                        width="320px",
-                        height="200px"
-                    )
-                +e('div').__content.--right
-                    +e('h3')
-                        +e('a').link(href="javascript:void(0);" title="ага")
-                            | our team
-                    +e('p')
-                        | We are united by our passion to create unique and efficient digital products
-            +b('h2').title.--mobile-dark.--team
-                | Inside Frontbyte
-            +e('p').__text
-                | We change the way businesses and industries operate.
-            include section/ui-kit/press-slider.pug
-            +press-slider(
-                [
+    include section/team.pug
+    +team({
+        "title": "Inside Frontbyte",
+        "text": "We change the way businesses and industries operate.",
+        "posts": [
+                {
+                "class": "--big",
+                "linkHref": "javascript:void(0);",
+                "linkTitle": "ага",
+                "sources": [
                     {
-                        "sources": [
-                            {
-                                "srcset": "images/content/main/inside.jpg",
-                                "media": "(min-width: 1440px)"
-                            }
-                        ],
-                        "address": "images/content/main/inside.webp",
-                        "text": "AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation",
-                        "press": "images/logo/tc.svg",
-                        "href": "javascript:void(0);"
+                        "srcset": "../../images/content/main/team.jpg"
                     },
-                    {
-                        "sources": [
-                            {
-                                "srcset": "images/content/main/birdieeyes.jpg",
-                                "media": "(min-width: 1366px)"
-                            }
-                        ],
-                        "address": "images/content/main/birdieeyes.webp",
-                        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-                        "press": "images/logo/tc.svg",
-                        "href": "javascript:void(0);"
-                    },
-                    {
-                        "sources": [
-                            {
-                                "srcset": "images/content/main/inside.jpg",
-                                "media": "(min-width: 1440px)"
-                            }
-                        ],
-                        "address": "images/content/main/inside.webp",
-                        "text": "AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation",
-                        "press": "images/logo/tc.svg",
-                        "href": "javascript:void(0);"
-                    },
-                    {
-                        "sources": [
-                            {
-                                "srcset": "images/content/main/birdieeyes.jpg",
-                                "media": "(min-width: 1366px)"
-                            }
-                        ],
-                        "address": "images/content/main/birdieeyes.webp",
-                        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-                        "press": "images/logo/tc.svg",
-                        "href": "javascript:void(0);"
-                    },
-                    {
-                        "sources": [
-                            {
-                                "srcset": "images/content/main/inside.jpg",
-                                "media": "(min-width: 1440px)"
-                            }
-                        ],
-                        "address": "images/content/main/inside.webp",
-                        "text": "AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation",
-                        "press": "images/logo/tc.svg",
-                        "href": "javascript:void(0);"
-                    },
-                ]
-            )
+                ],
+                "addres": "../../images/content/main/team.webp",
+                "contentClass": "--right",
+                "title": "our team",
+                "content": "We are united by our passion to create unique and efficient digital products"
+            }
+        ]
+    })
+        include section/ui-kit/press-slider.pug
+        +press-slider(
+            [
+                {
+                    "sources": [
+                        {
+                            "srcset": "images/content/main/inside.jpg",
+                            "media": "(min-width: 1440px)"
+                        }
+                    ],
+                    "address": "images/content/main/inside.webp",
+                    "text": "AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation",
+                    "press": "images/logo/tc.svg",
+                    "href": "javascript:void(0);"
+                },
+                {
+                    "sources": [
+                        {
+                            "srcset": "images/content/main/birdieeyes.jpg",
+                            "media": "(min-width: 1366px)"
+                        }
+                    ],
+                    "address": "images/content/main/birdieeyes.webp",
+                    "text": "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+                    "press": "images/logo/tc.svg",
+                    "href": "javascript:void(0);"
+                },
+                {
+                    "sources": [
+                        {
+                            "srcset": "images/content/main/inside.jpg",
+                            "media": "(min-width: 1440px)"
+                        }
+                    ],
+                    "address": "images/content/main/inside.webp",
+                    "text": "AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation",
+                    "press": "images/logo/tc.svg",
+                    "href": "javascript:void(0);"
+                },
+                {
+                    "sources": [
+                        {
+                            "srcset": "images/content/main/birdieeyes.jpg",
+                            "media": "(min-width: 1366px)"
+                        }
+                    ],
+                    "address": "images/content/main/birdieeyes.webp",
+                    "text": "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+                    "press": "images/logo/tc.svg",
+                    "href": "javascript:void(0);"
+                },
+                {
+                    "sources": [
+                        {
+                            "srcset": "images/content/main/inside.jpg",
+                            "media": "(min-width: 1440px)"
+                        }
+                    ],
+                    "address": "images/content/main/inside.webp",
+                    "text": "AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation",
+                    "press": "images/logo/tc.svg",
+                    "href": "javascript:void(0);"
+                },
+            ])
 
     +b('section').news
         .b-container

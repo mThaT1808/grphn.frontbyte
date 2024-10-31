@@ -202,30 +202,30 @@ block content
                     "href": "javascript:void(0);"
                 },
             ])
-
-    +b('section').news
-        .b-container
-            +b('h3').title.--label-mobile-dark.--news
-                | Latest News
-            +e.__wrapper
-                +e('div').__post
-                    +e('p')
-                        +e('a').link(href="javascript:void(0);" title="hew")
-                            | How to use email marketing to connect with your users
-                    +e('time')
-                        | Dec 19, 2018
-                +e('div').__post
-                    +e('p')
-                        +e('a').link(href="javascript:void(0);" title="hew")
-                            | How to use email marketing to connect with your users
-                    +e('time')
-                        | Dec 19, 2018
-                +e('div').__post
-                    +e('p')
-                        +e('a').link(href="javascript:void(0);" title="hew")
-                            | How to use email marketing to connect with your users
-                    +e('time')
-                        | Dec 19, 2018
+    include section/news.pug
+    +news({
+        "title": "Latest News",
+        "posts": [
+            {
+                "linkHref": "javascript:void(0);",
+                "linkTitle": "НОВОСТИ",
+                "text": "How to use email marketing to connect with your users",
+                "time": "Dec 19, 2018"
+            },
+            {
+                "linkHref": "javascript:void(0);",
+                "linkTitle": "НОВОСТИ",
+                "text": "How to use email marketing to connect with your users",
+                "time": "Dec 19, 2018"
+            },
+            {
+                "linkHref": "javascript:void(0);",
+                "linkTitle": "НОВОСТИ",
+                "text": "How to use email marketing to connect with your users",
+                "time": "Dec 19, 2018"
+            }
+        ]
+    })
     +b('section').contacts#contacts
         .b-container
             +e.wrapper

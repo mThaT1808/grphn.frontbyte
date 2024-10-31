@@ -5,4 +5,4 @@ mixin office(obj)
             +e('p').__city #{obj.city}
             +e('p').__addres #{obj.addres}
             +e('a').link(href=("email:" + obj.email) title=obj.email).__email #{obj.email}
-            +e('a').link(href=("tel:" + obj.phone)).__phone #{obj.phone}
+            +e('a').link(href=("tel:" + obj.phoneNumber)).__phone #{obj.phone}

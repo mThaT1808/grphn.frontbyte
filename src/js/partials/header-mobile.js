@@ -24,7 +24,7 @@
     const pageWrapper = document.querySelector(".b-page-wrapper");
     pageWrapper.addEventListener('scroll', function () {
         const header = document.querySelector('.b-header');
-        if (pageWrapper.scrollTop > 70) {
+        if (pageWrapper.scrollTop > 30) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');

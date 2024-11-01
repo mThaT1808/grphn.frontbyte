@@ -1,9 +1,9 @@
 mixin project(obj)
     +b('section').project#project
         .b-container
+            +b('h2').title.--mobile-dark.--project #{obj.title}
+            +e('p').__text #{obj.text}
             +e.wrapper
-                +b('h2').title.--mobile-dark.--project #{obj.title}
-                +e('p').__text #{obj.text}
                 each post in obj.posts
                     include ui-kit/post.pug
                     +post({

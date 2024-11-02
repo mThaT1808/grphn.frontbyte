@@ -3,7 +3,6 @@
 .b-about {
     padding-top: 90px;
     padding-bottom: 70px;
-    padding-right: 40px;
     background-color: @white;
 
 
@@ -33,15 +32,16 @@
 
     &__list {
         display: flex;
-        column-gap: 210px;
+        column-gap: 60px;
         flex-wrap: wrap;
         row-gap: 40px;
+        margin-right: -100px;
     }
     &__item {
         position: relative;
         flex-direction: column;
         align-items: flex-start;
-        padding: 0 0 120px;
+        padding: 0;
 
 
         &::before,
@@ -51,10 +51,7 @@
     }
 
     &__description {
-        position: absolute;
         width: 240px;
-
-        top: 120px;
     }
 
     &__logo-wrapper {

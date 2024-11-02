@@ -1,7 +1,7 @@
 mixin about(obj)
     +b('section').about#about
         .b-container
-            +e('p').__heading #{obj.heading}
+            +b('p').title.--mobile-dark.--about #{obj.heading}
             +e('p').__text #{obj.text}
             +e('ul').__list
                 each item in obj.items

@@ -1,5 +1,19 @@
 /* 768++  */
 
 .b-burger {
-    display: none;
+    background-color: @dark;
+
+
+    &--close &__visual {
+        &::before,
+        &::after {
+            background-color: @cl-light-grayish-blue;
+        }
+    }
+
+    &--close {
+        right: 60px ;
+        top: 40px;
+        background-color: transparent;
+    }
 }

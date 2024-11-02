@@ -23,218 +23,224 @@ block popup
 //- Выводим content
 block content
 
-    include section/hero.pug
-    +hero({
-        "heading": "We provide digital services and develop our own products in sports and iHealth industry",
-        "content": "We put technology and sport together to create the world's most efficient and popular sports apps.",
-        "linkHref": "javascript:void(0);",
-        "linkTitle": "Drop us a line",
-        "sources": [
-            {"srcset": "../../images/content/main/1440/hero-background2x.jpg"}
-        ],
-        "addres": "../../images/content/main/1440/hero-background2x.jpg"
-    })
-    include section/about.pug
-    +about({
-        "heading": "We combine high level of professionalism and individual approach",
-        "text": "We have subject domain expertise in various aspects",
-        "items": [
-            {
-                "src": "images/logo/project.svg",
-                "description": "Project management for simple and complex projects"
-            },
-            {
-                "src": "images/logo/hire.svg",
-                "description": "Management for hire"
-            },
-            {
-                "src": "images/logo/digital.svg",
-                "description": "Digital transformation"
-            },
-        ]
-    })
-    include section/service.pug
-    +service({
-        "title": "What We Do",
-        "items": [
-            "Development and support of new and existing software systems",
-            "Deep analytics in various spheres",
-            "Insights-driven solutions",
-            "Agile product engineering",
-            "Quality Assurance for new and existing products",
-            "Data collection, research and analysis",
-            "UX/UI concepts and design",
-            "Video and motion design"
-        ],
-        "linkHref": "javascript:void(0);",
-        "linkTitle": "Services"
-    })
-
-    include section/project.pug
-    +project({
-        "title": "Our Work",
-        "text": "We change the way businesses and industries operate.",
-        "posts": [
-            {
-                "class": "--big",
-                "linkHref": "javascript:void(0);",
-                "linkTitle": "ага",
-                "sources": [
+    +b.wrapper.--dark
+        include section/hero.pug
+        +hero({
+            "heading": "We provide digital services and develop our own products in sports and iHealth industry",
+            "content": "We put technology and sport together to create the world's most efficient and popular sports apps.",
+            "linkHref": "javascript:void(0);",
+            "linkTitle": "Drop us a line",
+            "sources": [
+                {"srcset": "../../images/content/main/1440/hero-background2x.jpg"}
+            ],
+            "addres": "../../images/content/main/1440/hero-background2x.jpg"
+        })
+    +b.wrapper.--white
+        include section/about.pug
+        +about({
+            "heading": "We combine high level of professionalism and individual approach",
+            "text": "We have subject domain expertise in various aspects",
+            "items": [
+                {
+                    "src": "images/logo/project.svg",
+                    "description": "Project management for simple and complex projects"
+                },
+                {
+                    "src": "images/logo/hire.svg",
+                    "description": "Management for hire"
+                },
+                {
+                    "src": "images/logo/digital.svg",
+                    "description": "Digital transformation"
+                },
+            ]
+        })
+    +b.wrapper.--white
+        include section/service.pug
+        +service({
+            "title": "What We Do",
+            "items": [
+                "Development and support of new and existing software systems",
+                "Deep analytics in various spheres",
+                "Insights-driven solutions",
+                "Agile product engineering",
+                "Quality Assurance for new and existing products",
+                "Data collection, research and analysis",
+                "UX/UI concepts and design",
+                "Video and motion design"
+            ],
+            "linkHref": "javascript:void(0);",
+            "linkTitle": "Services"
+        })
+    +b.wrapper
+        include section/project.pug
+        +project({
+            "title": "Our Work",
+            "text": "We change the way businesses and industries operate.",
+            "posts": [
+                {
+                    "class": "--big",
+                    "linkHref": "javascript:void(0);",
+                    "linkTitle": "birdieeyes",
+                    "sources": [
+                        {
+                            "srcset": "../../images/content/main/birdieeyes.jpg"
+                        },
+                    ],
+                    "addres": "../../images/content/main/birdieeyes.webp",
+                    "contentClass": "--colored",
+                    "title": "birdieeyes",
+                    "content": "We have introduced AR technology into one of the most traditional games and made it even more interesting"
+                },
+                {
+                    "linkHref": "javascript:void(0);",
+                    "linkTitle": "upsport",
+                    "sources": [
+                        {
+                            "srcset": "../../images/content/main/upsport.jpg"
+                        },
+                    ],
+                    "addres": "../../images/content/main/upsport.webp",
+                    "title": "upsport",
+                    "content": "Live communication platform that has changed the game for sport clubs, parents and their kids"
+                },
+                {
+                    "linkHref": "javascript:void(0);",
+                    "linkTitle": "xland",
+                    "sources": [
+                        {
+                            "srcset": "../../images/content/main/xland.jpg"
+                        },
+                    ],
+                    "addres": "../../images/content/main/xland.webp",
+                    "title": "xland",
+                    "content": "Digital presence for the first indoor activity park in Norway"
+                },
+            ],
+            "linkHref": "javascript:void(0);",
+            "linkTitle": "All projects"
+        })
+    +b.wrapper
+        include section/team.pug
+        +team({
+            "title": "Inside Frontbyte",
+            "text": "We change the way businesses and industries operate.",
+            "posts": [
                     {
-                        "srcset": "../../images/content/main/birdieeyes.jpg"
-                    },
-                ],
-                "addres": "../../images/content/main/birdieeyes.webp",
-                "contentClass": "--colored",
-                "title": "birdieeyes",
-                "content": "We have introduced AR technology into one of the most traditional games and made it even more interesting"
-            },
-            {
-                "linkHref": "javascript:void(0);",
-                "linkTitle": "ага",
-                "sources": [
+                    "class": "--big",
+                    "linkHref": "javascript:void(0);",
+                    "linkTitle": "our team",
+                    "sources": [
+                        {
+                            "srcset": "../../images/content/main/team.jpg"
+                        },
+                    ],
+                    "addres": "../../images/content/main/team.webp",
+                    "contentClass": "--right",
+                    "title": "our team",
+                    "content": "We are united by our passion to create unique and efficient digital products"
+                }
+            ]
+        })
+            include section/ui-kit/press-slider.pug
+            +press-slider(
+                [
                     {
-                        "srcset": "../../images/content/main/upsport.jpg"
+                        "sources": [
+                            {
+                                "srcset": "images/content/main/inside.jpg",
+                                "media": "(min-width: 1440px)"
+                            }
+                        ],
+                        "address": "images/content/main/inside.webp",
+                        "text": "AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation",
+                        "press": "images/logo/tc.svg",
+                        "href": "javascript:void(0);"
                     },
-                ],
-                "addres": "../../images/content/main/upsport.webp",
-                "title": "upsport",
-                "content": "Live communication platform that has changed the game for sport clubs, parents and their kids"
-            },
-            {
-                "linkHref": "javascript:void(0);",
-                "linkTitle": "ага",
-                "sources": [
                     {
-                        "srcset": "../../images/content/main/xland.jpg"
+                        "sources": [
+                            {
+                                "srcset": "images/content/main/birdieeyes.jpg",
+                                "media": "(min-width: 1366px)"
+                            }
+                        ],
+                        "address": "images/content/main/birdieeyes.webp",
+                        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+                        "press": "images/logo/tc.svg",
+                        "href": "javascript:void(0);"
                     },
-                ],
-                "addres": "../../images/content/main/xland.webp",
-                "title": "xland",
-                "content": "Digital presence for the first indoor activity park in Norway"
-            },
-        ],
-        "linkHref": "javascript:void(0);",
-        "linkTitle": "All projects"
-    })
-    include section/team.pug
-    +team({
-        "title": "Inside Frontbyte",
-        "text": "We change the way businesses and industries operate.",
-        "posts": [
-                {
-                "class": "--big",
-                "linkHref": "javascript:void(0);",
-                "linkTitle": "ага",
-                "sources": [
                     {
-                        "srcset": "../../images/content/main/team.jpg"
+                        "sources": [
+                            {
+                                "srcset": "images/content/main/inside.jpg",
+                                "media": "(min-width: 1440px)"
+                            }
+                        ],
+                        "address": "images/content/main/inside.webp",
+                        "text": "AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation",
+                        "press": "images/logo/tc.svg",
+                        "href": "javascript:void(0);"
                     },
-                ],
-                "addres": "../../images/content/main/team.webp",
-                "contentClass": "--right",
-                "title": "our team",
-                "content": "We are united by our passion to create unique and efficient digital products"
-            }
-        ]
-    })
-        include section/ui-kit/press-slider.pug
-        +press-slider(
-            [
+                    {
+                        "sources": [
+                            {
+                                "srcset": "images/content/main/birdieeyes.jpg",
+                                "media": "(min-width: 1366px)"
+                            }
+                        ],
+                        "address": "images/content/main/birdieeyes.webp",
+                        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+                        "press": "images/logo/tc.svg",
+                        "href": "javascript:void(0);"
+                    },
+                    {
+                        "sources": [
+                            {
+                                "srcset": "images/content/main/inside.jpg",
+                                "media": "(min-width: 1440px)"
+                            }
+                        ],
+                        "address": "images/content/main/inside.webp",
+                        "text": "AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation",
+                        "press": "images/logo/tc.svg",
+                        "href": "javascript:void(0);"
+                    },
+                ])
+    +b.wrapper
+        include section/news.pug
+        +news({
+            "title": "Latest News",
+            "posts": [
                 {
-                    "sources": [
-                        {
-                            "srcset": "images/content/main/inside.jpg",
-                            "media": "(min-width: 1440px)"
-                        }
-                    ],
-                    "address": "images/content/main/inside.webp",
-                    "text": "AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation",
-                    "press": "images/logo/tc.svg",
-                    "href": "javascript:void(0);"
+                    "linkHref": "javascript:void(0);",
+                    "linkTitle": "НОВОСТИ",
+                    "text": "How to use email marketing to connect with your users",
+                    "time": "Dec 19, 2018"
                 },
                 {
-                    "sources": [
-                        {
-                            "srcset": "images/content/main/birdieeyes.jpg",
-                            "media": "(min-width: 1366px)"
-                        }
-                    ],
-                    "address": "images/content/main/birdieeyes.webp",
-                    "text": "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-                    "press": "images/logo/tc.svg",
-                    "href": "javascript:void(0);"
+                    "linkHref": "javascript:void(0);",
+                    "linkTitle": "НОВОСТИ",
+                    "text": "How to use email marketing to connect with your users",
+                    "time": "Dec 19, 2018"
                 },
                 {
-                    "sources": [
-                        {
-                            "srcset": "images/content/main/inside.jpg",
-                            "media": "(min-width: 1440px)"
-                        }
-                    ],
-                    "address": "images/content/main/inside.webp",
-                    "text": "AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation",
-                    "press": "images/logo/tc.svg",
-                    "href": "javascript:void(0);"
-                },
-                {
-                    "sources": [
-                        {
-                            "srcset": "images/content/main/birdieeyes.jpg",
-                            "media": "(min-width: 1366px)"
-                        }
-                    ],
-                    "address": "images/content/main/birdieeyes.webp",
-                    "text": "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-                    "press": "images/logo/tc.svg",
-                    "href": "javascript:void(0);"
-                },
-                {
-                    "sources": [
-                        {
-                            "srcset": "images/content/main/inside.jpg",
-                            "media": "(min-width: 1440px)"
-                        }
-                    ],
-                    "address": "images/content/main/inside.webp",
-                    "text": "AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation",
-                    "press": "images/logo/tc.svg",
-                    "href": "javascript:void(0);"
-                },
-            ])
-    include section/news.pug
-    +news({
-        "title": "Latest News",
-        "posts": [
-            {
-                "linkHref": "javascript:void(0);",
-                "linkTitle": "НОВОСТИ",
-                "text": "How to use email marketing to connect with your users",
-                "time": "Dec 19, 2018"
-            },
-            {
-                "linkHref": "javascript:void(0);",
-                "linkTitle": "НОВОСТИ",
-                "text": "How to use email marketing to connect with your users",
-                "time": "Dec 19, 2018"
-            },
-            {
-                "linkHref": "javascript:void(0);",
-                "linkTitle": "НОВОСТИ",
-                "text": "How to use email marketing to connect with your users",
-                "time": "Dec 19, 2018"
-            }
-        ]
-    })
-    include section/contacts.pug
-    +contacts({
-        "title": "Contacts",
-        "text": "Our head office is located in Norway. Research and dev center is located in Belarus.",
-        "linkHref": "javascript:void(0);",
-        "linkTitle": "Drop us a line"
-    })
-
-    +b('section').page-navigation
-        .b-container
-            include template/layout/nav.pug
-            +nav()
+                    "linkHref": "javascript:void(0);",
+                    "linkTitle": "НОВОСТИ",
+                    "text": "How to use email marketing to connect with your users",
+                    "time": "Dec 19, 2018"
+                }
+            ]
+        })
+    +b.wrapper.--black
+        include section/contacts.pug
+        +contacts({
+            "title": "Contacts",
+            "text": "Our head office is located in Norway. Research and dev center is located in Belarus.",
+            "linkHref": "javascript:void(0);",
+            "linkTitle": "Drop us a line"
+        })
+    +b.wrapper.--dark
+        +b('section').page-navigation
+            .b-container
+                include template/layout/nav.pug
+                +nav()

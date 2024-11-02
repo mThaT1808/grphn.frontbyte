@@ -1,16 +1,17 @@
 mixin hero(obj)
     +b('section').hero
+        +e('div').background
+            include ui-kit/images.pug
+            +images(
+                obj.sources,
+                source="true",
+                address=obj.addres,
+                width="768px",
+                height="500px"
+            )
         .b-container
-            +e('div').background
-                include ui-kit/images.pug
-                +images(
-                    obj.sources,
-                    source="true",
-                    address=obj.addres,
-                    width="768px",
-                    height="500px"
-                )
-            +e('h1').__heading #{obj.heading}
-            +e().__content #{obj.content}
+            +e.wrapper
+                +e('h1').__heading #{obj.heading}
+                +e().__content #{obj.content}
             +b('a').link(href=obj.linkHref title=obj.linkTitle).--block.--hero #{obj.linkTitle}
                 +e('div').__arrow

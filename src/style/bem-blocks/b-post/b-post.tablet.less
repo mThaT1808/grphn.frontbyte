@@ -10,15 +10,14 @@
         overflow: hidden;
         margin-bottom: 0;
 
-        transition: scale, @animation-time;
-
         img {
             object-fit: cover;
             height: 100%;
-        }
 
-        &:hover {
-            transform: scale(1.01);
+            transition: scale, @animation-time;
+            &:hover {
+                transform: scale(1.01);
+            }
         }
     }
 
